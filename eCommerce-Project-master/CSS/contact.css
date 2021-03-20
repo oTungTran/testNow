@@ -1,0 +1,86 @@
+.contact {
+    float: left;
+    width: 80%;
+    margin-top: 1rem;
+    margin-left: 10%;
+    text-align: center;
+}
+
+.contact h1 {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    color: #7f8c8d;
+}
+
+.contact img {
+    width: 80%;
+}
+
+.infor_contact td a {
+    color: black;
+}
+
+.infor_contact td a:hover {
+    text-decoration: none;
+    color: orange;
+}
+
+
+/*--footer--*/
+
+.footer {
+    float: left;
+    margin-top: 3rem;
+    width: 100%;
+    background-color: #353b48;
+}
+
+.footer_title {
+    float: left;
+    margin-top: 1rem;
+    width: 80%;
+    margin-left: 10%;
+}
+
+.footer_title h1 {
+    font-size: 25px;
+    margin-bottom: 2rem;
+    color: white;
+}
+
+.footer_title ul li {
+    margin-bottom: 1rem;
+}
+
+.footer_title ul li a {
+    color: white;
+    font-size: 18px;
+    font-weight: 400;
+}
+
+.footer_title ul li a:hover {
+    text-decoration: none;
+    color: orange;
+}
+
+.footer_title ul li a i {
+    width: 2%;
+}
+
+.footer_title ul li a span {
+    margin-left: 0.8rem;
+}
+
+.footer_title ul li a img {
+    margin-left: -0.8rem;
+    width: 70%;
+}
+
+.socialNetwork a {
+    color: white;
+    font-size: 13px;
+}
+
+.socialNetwork a:hover {
+    color: orange;
+}

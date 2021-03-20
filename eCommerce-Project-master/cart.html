@@ -1,0 +1,483 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CART BTEC STORE</title>
+    <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700,900" rel="stylesheet">
+    <link rel="stylesheet" href="css/griddemo1.css">
+    <link rel="stylesheet" href="css/cart.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</head>
+
+<body>
+
+    <!-- HEADER -->
+    <header class="header">
+        <!-- Topbar-->
+        <div class="top_header topbar topbar-dark bg-dark">
+            <ul class="title_top_header nav">
+                <li class="nav-item">
+                    <a class="nav-link" href="#"><i class="fas fa-mobile-alt"></i><span>  0387798072</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#"><i class="far fa-envelope"></i><span> BTECSTORE@FPT.EDU.VN</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#"><i class="fas fa-map-marker-alt"></i><span>  107 Nguyen Phong Sac, Dich Vong Hau, Cau Giay, Ha Noi.</span></a>
+                </li>
+            </ul>
+        </div>
+        <div class="main_header navbar-sticky">
+            <div class="title_main_header navbar navbar-expand-lg navbar-light">
+                <div class="main_header_title container">
+                    <a class="logo_img navbar-brand d-none d-sm-block mr-3 flex-shrink-0" href="index.html"><img src="img/logoshopbill.png" alt=""></a>
+                    <a class="logo_img_rps navbar-brand d-sm-none mr-2" href="index.html"><img src="/resources/image/logoshop.png" alt=""></a>
+                    <!---search--->
+                    <div class="search_box input-group-overlay d-none d-lg-flex mx-4">
+                        <input class="form-control" type="text" placeholder="Search" aria-label="Search">
+                        <a class="search_btn" href=""><i class="fas fa-search"></i></a>
+                    </div>
+                    <!--end search-->
+                    <div class="header_funtion navbar-toolbar d-flex flex-shrink-0 align-items-center drop_down">
+                        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse"><span><i class="fas fa-bars"></i></span></button>
+                        <div class="header_funtion_title navbar-tool-icon-box"><a href=""><i class="far fa-heart"></i><span class="navbar-tool-tooltip"></span></a>
+                        </div>
+                        <div class="header_funtion_title navbar-tool-icon-box"><a href="" data-toggle="modal" data-target="#modal_login"><i class="far fa-user"></i>
+                                <p class="navbar-tool d-none d-lg-flex"><span class="navbar-tool-tooltip"><small >Hello, Sign in</small></br>MY ACCOUNT</span></p></a>
+                            <!-- Modal login-->
+                            <div class="modal fade" id="modal_login" tabindex="-1" aria-labelledby="LoginLabel" aria-hidden="true">
+                                <div class=" modal-dialog modal_login_edit">
+                                    <div class=" modal-content">
+                                        <div class="modal_login_show modal-body">
+                                            <nav>
+                                                <div class="nav modal_title nav-tabs" id="nav-tab" role="tablist">
+                                                    <a class="nav-item nav-link active popup_login_title" id="nav-login-tab" data-toggle="tab" href="#nav-login" role="tab" aria-controls="nav-login" aria-selected="true">LOGIN</a>
+                                                    <a class="nav-item nav-link popup_login_title" id="nav-register-tab" data-toggle="tab" href="#nav-register" role="tab" aria-controls="nav-register" aria-selected="false">REGISTER</a>
+                                                </div>
+                                            </nav>
+                                            <div class="tab-content" id="nav-tabContent">
+                                                <div class="tab-pane fade show active" id="nav-login" role="tabpanel" aria-labelledby="nav-login-tab">
+                                                    <div class="modal_left">
+                                                        <img src="/resources/image/login.png" alt=""></div>
+                                                    <div class="modal_right">
+                                                        <form class="login_form">
+                                                            <div class="form-group">
+                                                                <label for="exampleInputEmail1">Email address</label>
+                                                                <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
+                                                                <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+                                                            </div>
+                                                            <div class="form-group">
+                                                                <label for="exampleInputPassword1">Password</label>
+                                                                <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+                                                            </div>
+                                                            <div class="forgot_pass">
+                                                                <a href="">Forgot your password?</a>
+                                                            </div>
+                                                            <button type="signin" class="btn btn-primary">SIGN IN</button>
+                                                            <div class="login_api">
+                                                                <ul>
+                                                                    <li>
+                                                                        <a href=""><i class="fab fa-facebook-square"></i></a>
+                                                                    </li>
+                                                                    <li>
+                                                                        <a href=""><i class="fab fa-google"></i></a>
+                                                                    </li>
+                                                                    <li>
+                                                                        <a href=""><i class="fab fa-github"></i></a>
+                                                                    </li>
+                                                                </ul>
+                                                            </div>
+                                                        </form>
+                                                    </div>
+                                                </div>
+                                                <div class="register tab-pane fade" id="nav-register" role="tabpanel" aria-labelledby="nav-register-tab">
+                                                    <div class="modal_left_register">
+                                                        <img src="/resources/image/login.png" alt="">
+                                                    </div>
+                                                    <div class="modal_right_register">
+                                                        <div class="input-group mb-3">
+                                                            <span>Fullname :</span>
+                                                            <input type="text" class="form-control" placeholder="Fullname" aria-label="Fullname" aria-describedby="basic-addon1">
+                                                        </div>
+                                                        <div class="input-group mb-3">
+                                                            <span>Numberphone :</span>
+                                                            <input type="text" class="form-control" placeholder="Numberphone" aria-label="Numberphone" aria-describedby="basic-addon1">
+                                                        </div>
+                                                        <div class="input-group mb-3">
+                                                            <span>Email :</span>
+                                                            <input type="text" class="form-control" placeholder="Email" aria-label="Email" aria-describedby="basic-addon1">
+                                                        </div>
+                                                        <div class="input-group mb-3">
+                                                            <span>Address:</span>
+                                                            <input type="text" class="form-control" placeholder="Address" aria-label="Address" aria-describedby="basic-addon1">
+                                                        </div>
+                                                        <div class="input-group mb-3">
+                                                            <span>Birth Of Date:</span>
+                                                            <input type="date" class="form-control" aria-describedby="basic-addon1">
+                                                        </div>
+                                                        <div class=" input-group mb-3">
+                                                            <span>Gender:</span>
+                                                            <select>
+                                                               <option value="gender">Male</option>
+                                                               <option value="gender">Female</option>
+                                                               <option value="gender">Other</option>
+                                                            </select>
+                                                        </div>
+                                                        <div class="input-group mb-3">
+                                                            <span>Password:</span>
+                                                            <input type="text" class="form-control" placeholder="Password" aria-label="Password" aria-describedby="basic-addon1">
+                                                        </div>
+                                                        <div class="input-group mb-3">
+                                                            <span>Retype Password:</span>
+                                                            <input type="text" class="form-control" placeholder="Password" aria-label="Password" aria-describedby="basic-addon1">
+                                                        </div>
+                                                        <button type="button" class="btn btn-warning">REGISTER</button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="header_funtion_title header_cart navbar-tool-icon-box"><a href=""><i class="fab fa-opencart"></i>
+                                <p class="navbar-tool d-none d-lg-flex "><span class="navbar-tool-tooltip"><small>My Cart</small></br>$265.00</p>
+                                </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="main_nav_show navbar navbar-expand-lg navbar-light navbar-stuck-menu mt-n2 pt-0 pb-2">
+            <div class="main_nav container">
+                <div class="collapse navbar-collapse" id="navbarCollapse">
+                    <!-- Search-->
+                    <div class="input-group-overlay d-lg-none my-3">
+                        <div class="input-group-prepend-overlay"><span class="input-group-text"><i class="czi-search"></i></span></div>
+                        <input class="form-control prepended-form-control" type="text" placeholder="Search...">
+                    </div>
+                    <!-- Primary menu-->
+                    <ul class="main_nav_title navbar-nav">
+                        <li class=" nav-item"><a class="nav-link" href="#">Home</a></li>
+                        <li class="nav-item dropdown"><a class="nav-link dropdown-toggle" href="#" data-toggle="dropdown">Products</a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#">Iphone</a></li>
+                                <li><a class="dropdown-item" href="#">Samsung</a></li>
+                                <li><a class="dropdown-item" href="#">Vsmart</a></li>
+                                <li><a class="dropdown-item" href="#">Xiaomi</a></li>
+                                <li><a class="dropdown-item" href="#">Oppo</a></li>
+                                <li><a class="dropdown-item" href="#">Huawei</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item"><a class="nav-link" href="#">Contact</a>
+                        </li>
+                        <li class="nav-item"><a class="nav-link" href="#">Service</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#">About Us</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        </div>
+    </header>
+    <!--end header-->
+    <section class="main_page">
+        <!--bath-->
+        <nav class="bath" aria-label="breadcrumb">
+            <ol class="breadcrumb">
+                <li class="bath_edit breadcrumb-item"><a href="index.html">Home</a></li>
+                <li class="breadcrumb-item active" aria-current="page">Cart</li>
+            </ol>
+        </nav>
+        <div class="checkout">
+            <div class="row">
+                <div class="col span-3-of-6">
+                    <div class="billing_details">
+                        <div class="section_title">
+                            <h3 class="title">BILLING ADDRESS</h3>
+                        </div>
+                        <div class="form_group">
+                            <input class="input" type="text" name="first-name" placeholder="First Name" required>
+                        </div>
+                        <div class="form_group">
+                            <input class="input" type="text" name="last-name" placeholder="Last Name" required>
+                        </div>
+                        <div class="form_group">
+                            <input class="input" type="email" name="email" placeholder="Email" required>
+                        </div>
+                        <div class="form_group">
+                            <input class="input" type="text" name="address" placeholder="Address" required>
+                        </div>
+                        <div class="form_group">
+                            <input class="input" type="text" name="city" placeholder="City" required>
+                        </div>
+                        <div class="form_roup">
+                            <input class="input" type="text" name="zip-code" placeholder="ZIP Code" required>
+                        </div>
+                        <div class="form_group">
+                            <input class="input" type="tel" name="tel" placeholder="Telephone" required>
+                        </div>
+                        <div class="shiping_details">
+                            <div class="section_title">
+                                <h3 class="title">SHIPING ADDRESS</h3>
+                            </div>
+                            <div class="input_checkbox">
+                                <a onclick="otherAddress()">Ship to a diffrent address?</a>
+
+                                <div class="caption" id="caption">
+                                    <div class="form_group">
+                                        <input class="input" type="text" name="first-name" placeholder="First Name">
+                                    </div>
+                                    <div class="form_group">
+                                        <input class="input" type="text" name="last-name" placeholder="Last Name">
+                                    </div>
+                                    <div class="form_group">
+                                        <input class="input" type="email" name="email" placeholder="Email">
+                                    </div>
+                                    <div class="form_group">
+                                        <input class="input" type="text" name="address" placeholder="Address">
+                                    </div>
+                                    <div class="form_group">
+                                        <input class="input" type="text" name="city" placeholder="City">
+                                    </div>
+                                    <div class="form_group">
+                                        <input class="input" type="text" name="zip-code" placeholder="ZIP Code">
+                                    </div>
+                                    <div class="form_group">
+                                        <input class="input" type="tel" name="tel" placeholder="Telephone">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="bill_notes">
+                            <input class="input" placeholder="Notes"></input required>
+                        </div>
+                    </div>
+                </div>
+                <div class="col span-3-of-6">
+                    <div class="order_detail">
+                        <div class="section_title">
+                            <h3 class="title">ORDER DETAIL</h3>
+                        </div>
+                        <table class="order_detail_table">
+                            <tbody>
+                                <tr>
+                                    <td class="product_title_order">Product</td>
+                                    <td class="quantity_title_order">Quantity</td>
+                                    <td class="total_title_order">Total</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <div class="scroll_table">
+                            <table>
+                                <tbody>
+                                    <tr>
+                                        <td class="scroll_table_img"><img src="https://fptshop.com.vn/Uploads/Originals/2020/8/5/637322682441632129_ss-note-20-ultra-gold-1.png" alt=""></td>
+                                        <td class="scroll_table_name">Samsung Galaxy Note 20 Ultra 5G
+                                        </td>
+                                        <td class="scroll_table_quantity"><input type="number" placeholder="1" min="1"></td>
+
+                                        <td class="scroll_table_price"><span>1990$</span></td>
+                                        <td><a href=""><i class="fas fa-trash-alt"></i></a></td>
+                                    </tr>
+                                    <tr>
+                                        <td class="scroll_table_img"><img src="https://fptshop.com.vn/Uploads/Originals/2020/8/5/637322682441632129_ss-note-20-ultra-gold-1.png" alt=""></td>
+                                        <td class="scroll_table_name">Samsung Galaxy Note 20 Ultra 5G
+                                        </td>
+                                        <td class="scroll_table_quantity"><input type="number" placeholder="1" min="1"></td>
+
+                                        <td class="scroll_table_price"><span>1990$</span></td>
+                                        <td><a href=""><i class="fas fa-trash-alt"></i></a></td>
+                                    </tr>
+                                    <tr>
+                                        <td class="scroll_table_img"><img src="https://fptshop.com.vn/Uploads/Originals/2020/8/5/637322682441632129_ss-note-20-ultra-gold-1.png" alt=""></td>
+                                        <td class="scroll_table_name">Samsung Galaxy Note 20 Ultra 5G
+                                        </td>
+                                        <td class="scroll_table_quantity"><input type="number" placeholder="1" min="1"></td>
+
+                                        <td class="scroll_table_price"><span>1990$</span></td>
+                                        <td><a href=""><i class="fas fa-trash-alt"></i></a></td>
+                                    </tr>
+                                    <tr>
+                                        <td class="scroll_table_img"><img src="https://fptshop.com.vn/Uploads/Originals/2020/8/5/637322682441632129_ss-note-20-ultra-gold-1.png" alt=""></td>
+                                        <td class="scroll_table_name">Samsung Galaxy Note 20 Ultra 5G
+                                        </td>
+                                        <td class="scroll_table_quantity"><input type="number" placeholder="1" min="1"></td>
+
+                                        <td class="scroll_table_price"><span>1990$</span></td>
+                                        <td><a href=""><i class="fas fa-trash-alt"></i></a></td>
+                                    </tr>
+                                    <tr>
+                                        <td class="scroll_table_img"><img src="https://fptshop.com.vn/Uploads/Originals/2020/8/5/637322682441632129_ss-note-20-ultra-gold-1.png" alt=""></td>
+                                        <td class="scroll_table_name">Samsung Galaxy Note 20 Ultra 5G
+                                        </td>
+                                        <td class="scroll_table_quantity"><input type="number" placeholder="1" min="1"></td>
+
+                                        <td class="scroll_table_price"><span>1990$</span></td>
+                                        <td><a href=""><i class="fas fa-trash-alt"></i></a></td>
+                                    </tr>
+                                    <tr>
+                                        <td class="scroll_table_img"><img src="https://fptshop.com.vn/Uploads/Originals/2020/8/5/637322682441632129_ss-note-20-ultra-gold-1.png" alt=""></td>
+                                        <td class="scroll_table_name">Samsung Galaxy Note 20 Ultra 5G
+                                        </td>
+                                        <td class="scroll_table_quantity"><input type="number" placeholder="1" min="1"></td>
+
+                                        <td class="scroll_table_price"><span>1990$</span></td>
+                                        <td><a href=""><i class="fas fa-trash-alt"></i></a></td>
+                                    </tr>
+                                    <tr>
+                                        <td class="scroll_table_img"><img src="https://fptshop.com.vn/Uploads/Originals/2020/8/5/637322682441632129_ss-note-20-ultra-gold-1.png" alt=""></td>
+                                        <td class="scroll_table_name">Samsung Galaxy Note 20 Ultra 5G
+                                        </td>
+                                        <td class="scroll_table_quantity"><input type="number" placeholder="1" min="1"></td>
+
+                                        <td class="scroll_table_price"><span>1990$</span></td>
+                                        <td><a href=""><i class="fas fa-trash-alt"></i></a></td>
+                                    </tr>
+                                    <tr>
+                                        <td class="scroll_table_img"><img src="https://fptshop.com.vn/Uploads/Originals/2020/8/5/637322682441632129_ss-note-20-ultra-gold-1.png" alt=""></td>
+                                        <td class="scroll_table_name">Samsung Galaxy Note 20 Ultra 5G
+                                        </td>
+                                        <td class="scroll_table_quantity"><input type="number" placeholder="1" min="1"></td>
+
+                                        <td class="scroll_table_price"><span>1990$</span></td>
+                                        <td><a href=""><i class="fas fa-trash-alt"></i></a></td>
+                                    </tr>
+                                    <tr>
+                                        <td class="scroll_table_img"><img src="https://fptshop.com.vn/Uploads/Originals/2020/8/5/637322682441632129_ss-note-20-ultra-gold-1.png" alt=""></td>
+                                        <td class="scroll_table_name">Samsung Galaxy Note 20 Ultra 5G
+                                        </td>
+                                        <td class="scroll_table_quantity"><input type="number" placeholder="1" min="1"></td>
+
+                                        <td class="scroll_table_price"><span>1990$</span></td>
+                                        <td><a href=""><i class="fas fa-trash-alt"></i></a></td>
+                                    </tr>
+                                    <tr>
+                                        <td class="scroll_table_img"><img src="https://fptshop.com.vn/Uploads/Originals/2020/8/5/637322682441632129_ss-note-20-ultra-gold-1.png" alt=""></td>
+                                        <td class="scroll_table_name">Samsung Galaxy Note 20 Ultra 5G
+                                        </td>
+                                        <td class="scroll_table_quantity"><input type="number" placeholder="1" min="1"></td>
+
+                                        <td class="scroll_table_price"><span>1990$</span></td>
+                                        <td><a href=""><i class="fas fa-trash-alt"></i></a></td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        <div class="shipping_order">
+                            <p>Shipping: <span>3$</span></p>
+                        </div>
+                        <div class="total_order">
+                            <p>Grand total: <span>1990$</span></p>
+                        </div>
+                        <div class="payment">
+                            <ul>
+                                <li><button type="button" class="btn btn-warning">PAYMENT IN CASH</button></li>
+                                <li><button type="button" class="btn btn-primary">PAYMENT VIA PAYPAL</button></li>
+                            </ul>
+                        </div>
+                        <div class="order_checkout">
+                            <button type="button" class="btn btn-danger">CHECKOUT</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- login -->
+
+    <!-- end login -->
+    <footer class="footer">
+        <div class="footer_title">
+            <div class="row">
+                <div class="col-sm-6 ">
+                    <h1>BTEC STORE</h1>
+                    <ul>
+                        <li>
+                            <a href=""><i class="fas fa-map-marker-alt"></i><span>107 Nguyen Phong Sac, Dich Vong Hau, Cau Giay, Ha Noi.</span></a>
+                        </li>
+                        <li>
+                            <a href=""><i class="fas fa-mobile-alt"></i><span>0387798072</span></a>
+                        </li>
+                        <li>
+                            <a href=""><i class="far fa-envelope"></i><span>BTECSTORE@GMAIL.COM</span></a>
+                        </li>
+                    </ul>
+
+                </div>
+                <div class="col-sm-3 ">
+                    <h1>Customer Support</h1>
+                    <ul>
+                        <li>
+                            <a href=""><i class="far fa-question-circle"></i><span>  Shopping Guide</span></a>
+                        </li>
+                        <li>
+                            <a href=""><i class="far fa-question-circle"></i><span>  Payment Guide</span></a>
+                        </li>
+                        <li>
+                            <a href=""><i class="far fa-question-circle"></i><span>  Return Policy</span></a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-sm-3 ">
+                    <h1>Payment Methods</h1>
+                    <ul>
+                        <li>
+                            <a href=""><i class="fas fa-money-bill"></i><span>  Cash On Delivery</span></a>
+                        </li>
+                        <li>
+                            <a href=""><i class="fab fa-cc-paypal"></i><span>  Payment Via Paypal</span></a>
+                        </li>
+                        <li>
+                            <a href=""><img src="https://goccuaphu.com/wp-content/uploads/2017/10/huong-dan-tao-tai-khoan-paypal-cho-nguoi-moi-tu-a-z.png" alt=""></a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="socialNetwork">
+                <div class="row d-flex justify-content-center">
+                    <div class="col d-flex justify-content-center my-5 pt-1">
+                        <a class="fb-ic" href="">
+                            <i class="fab fa-facebook-f fa-lg white-text mx-3 mx-md-4 fa-2x"> </i>
+                        </a>
+                        <a class="tw-ic" href="">
+                            <i class="fab fa-twitter fa-lg white-text mx-3 mx-md-4 fa-2x"> </i>
+                        </a>
+                        <a class="gplus-ic" href="">
+                            <i class="fab fa-google-plus-g fa-lg white-text mx-3 mx-md-4 fa-2x"> </i>
+                        </a>
+                        <a class="li-ic" href="">
+                            <i class="fab fa-linkedin-in fa-lg white-text mx-3 mx-md-4 fa-2x"> </i>
+                        </a>
+                        <a class="ins-ic" href="">
+                            <i class="fab fa-instagram fa-lg white-text mx-3 mx-md-4 fa-2x"> </i>
+                        </a>
+                        <a class="pin-ic" href="">
+                            <i class="fab fa-pinterest fa-lg white-text mx-3 mx-md-4 fa-2x"> </i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+    </footer>
+</body>
+<script>
+    var a = 0;
+
+    function otherAddress() {
+        if (a == 0) {
+            document.getElementById('caption').style.display = 'block';
+            a = 1;
+        } else {
+            document.getElementById('caption').style.display = 'none';
+            a = 0;
+        }
+    }
+</script>
+
+</html>

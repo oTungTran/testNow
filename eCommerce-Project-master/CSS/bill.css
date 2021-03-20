@@ -1,0 +1,207 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+}
+
+html {
+    font-family: 'Lato', 'san-serif';
+    text-rendering: optimizeLegibility;
+}
+
+body {
+    background-color: #bdc3c7;
+}
+
+
+/*-bill-*/
+
+.bill {
+    float: left;
+    margin-top: 6rem;
+    width: 100%;
+}
+
+.show_bill {
+    float: left;
+    margin-top: 1rem;
+    width: 80%;
+    margin-left: 10%;
+}
+
+.main_bill {
+    float: left;
+    width: 100%;
+}
+
+.bill_title {
+    display: flex;
+}
+
+.main_bill_infor {
+    float: left;
+    width: 100%;
+    margin-top: 2rem;
+}
+
+.main_bill-title h4 {
+    font-size: 20px;
+}
+
+.main_bill_infor i {
+    font-size: 60px;
+    color: #4cd137;
+}
+
+.main_bill-icon {
+    float: left;
+    width: 5%;
+}
+
+.main_bill-title {
+    float: left;
+    width: 100%;
+    margin-left: 2.5rem;
+}
+
+.main_bill-title span {
+    width: 100%;
+}
+
+.main_bill-title span p {
+    text-transform: uppercase;
+}
+
+.infor_order_bill {
+    float: left;
+    width: 80%;
+    margin-top: 1rem;
+    margin-left: 10%;
+}
+
+.infor-customer h5 {
+    font-weight: 600;
+}
+
+.infor-customer span {
+    float: left;
+    font-size: 15px;
+    text-transform: uppercase;
+}
+
+.infor_bill {
+    margin-top: 2rem;
+    padding: 0 0!important;
+    background-color: white;
+    border: 1px solid #bdc3c7;
+}
+
+.infor_bill_header {
+    float: left;
+    width: 100%;
+    font-weight: 600;
+    border-bottom: 1px solid #bdc3c7;
+}
+
+.infor_bill_header span {
+    margin-left: 0.5rem;
+}
+
+.infor_bill_show {
+    float: left;
+    width: 100%;
+}
+
+.infor_bill_show ul li {
+    width: 100%;
+    height: 5rem;
+    margin-top: 1rem;
+    float: left;
+}
+
+.img_bill {
+    float: left;
+    width: 15%;
+}
+
+.img_bill img {
+    width: 100%;
+}
+
+.infor_product_bill {
+    float: left;
+    width: 60%;
+    margin-left: 1%;
+}
+
+.infor_product_bill {
+    font-weight: 600;
+}
+
+.total_price_bill {
+    float: right;
+    width: 15%;
+}
+
+.total_price_bill p {
+    font-weight: 600;
+}
+
+.list_order {
+    border-bottom: 1px solid #bdc3c7;
+}
+
+.infor_bill_grandTotal {
+    float: left;
+    width: 100%;
+    height: 7rem;
+}
+
+.total_all_pr {
+    float: left;
+    width: 90%;
+    margin-left: 10%;
+}
+
+.shipping_bill {
+    float: left;
+    width: 90%;
+    margin-left: 10%;
+}
+
+.grandTotal_bill {
+    float: left;
+    width: 90%;
+    margin-left: 10%;
+}
+
+.title_grand {
+    font-weight: 600;
+}
+
+.title_grand span {
+    float: right;
+    margin-right: 2rem;
+}
+
+.bill_function {
+    float: left;
+    margin-top: 2rem;
+    width: 60%;
+    margin-left: 16%;
+}
+
+.bill_function button {
+    float: left;
+    font-weight: 600;
+    margin-left: 2rem;
+    min-width: 200px;
+}
+
+.bill_function button i {
+    font-size: 15px;
+    padding-right: 0.5rem;
+    color: black;
+}

@@ -1,0 +1,70 @@
+.about_us_infor {
+    float: left;
+    width: 80%;
+    margin-left: 10%;
+}
+
+.about_us_title {
+    float: left;
+    width: 100%;
+    margin-top: 1rem;
+    text-align: center;
+}
+
+.about_us_title h5 {
+    width: 100%;
+    color: #7f8c8d;
+}
+
+.about_us_title h6 {
+    width: 100%;
+    font-weight: 400;
+}
+
+.about_product {
+    float: left;
+    width: 100%;
+    margin-left: 1rem;
+    margin-top: 3rem;
+}
+
+.list_brand {
+    float: left;
+    margin-left: 5%!important;
+}
+
+.about_brand {
+    float: left;
+    width: 100%;
+    margin-left: 20%;
+    margin: 0 0 0 0 !important;
+    padding: 0 0 !important;
+}
+
+.about_brand img {
+    padding: 15px 0 15px 0;
+    width: 100%;
+    transition: 0.4s all;
+}
+
+.brand_img {
+    width: 70%;
+    height: 16rem;
+}
+
+.about_brand img:hover {
+    transform: scale(1.1);
+}
+
+.title_brand {
+    width: 80%;
+    margin-left: 1rem;
+    height: 17rem;
+    background-color: white;
+    overflow: hidden;
+}
+
+.title_brand h1 {
+    margin-top: 2rem;
+    font-size: 25px;
+}

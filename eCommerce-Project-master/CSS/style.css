@@ -1,0 +1,787 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+    outline: none;
+}
+
+html {
+    font-family: 'Lato', 'san-serif';
+    text-rendering: optimizeLegibility;
+}
+
+body {
+    background-color: #f8f9fa;
+}
+
+
+/*---Header---*/
+
+
+/*---top header---*/
+
+.header {
+    float: left;
+    width: 100%;
+    height: 10.4rem;
+    border-bottom: 2px solid red;
+    background-color: white;
+    overflow: visible;
+}
+
+.fixed-top {
+    position: fixed;
+    top: 5rem;
+    right: 0;
+    left: 0;
+    z-index: 1;
+}
+
+.top_header {
+    float: left;
+    width: 100%;
+    height: 20%;
+    background-color: #7f8c8d;
+    overflow: hidden;
+}
+
+.title_top_header {
+    float: left;
+    width: 80%;
+    margin-left: 10%;
+    line-height: 2rem;
+}
+
+.title_top_header li a {
+    padding: 0 1.5rem 0 0;
+    color: white;
+    font-size: 12px;
+}
+
+
+/*---end top header---*/
+
+
+/*---main header---*/
+
+.main_header {
+    float: left;
+    width: 100%;
+}
+
+.title_main_header {
+    width: 80%;
+    margin-left: 10%;
+}
+
+.main_header_title {
+    float: left;
+    width: 80%;
+    margin: 0 0 0 0!important;
+    padding: 0 0 !important;
+}
+
+.logo_img {
+    float: left;
+    min-width: 7rem;
+    margin-left: -1rem;
+    padding-right: 8%;
+    cursor: pointer;
+}
+
+.logo_img img {
+    width: 11rem;
+}
+
+.logo_img_rps {
+    min-width: 6rem;
+}
+
+.logo_img_rps img {
+    width: 6rem;
+}
+
+.search_box {
+    float: left;
+    width: 70% !important;
+    position: relative;
+}
+
+.search_btn {
+    float: left;
+    margin-top: 0.4rem;
+    position: absolute;
+    margin-left: 95%;
+    color: black;
+    cursor: pointer;
+}
+
+.search_btn:hover {
+    color: orange;
+}
+
+.search_recmt {
+    top: 2.6rem;
+    width: 100%;
+    border-radius: 3px;
+    background-color: white;
+    position: absolute;
+    z-index: 5000;
+    display: none;
+}
+
+.search_box input:focus~.search_recmt {
+    display: block;
+}
+
+.search_recmt ul li {
+    float: left;
+    height: 2rem;
+    width: 100%;
+    border-radius: 3px;
+}
+
+.search_recmt ul li:hover {
+    background: #efefef;
+}
+
+.search_recmt ul li a {
+    float: left;
+    line-height: 2rem;
+    width: 98%;
+    margin-left: 2%;
+    color: black;
+    overflow: hidden;
+    text-decoration: none;
+}
+
+.header_funtion {
+    float: right;
+    margin-right: -32%;
+}
+
+.header_funtion_title {
+    float: left;
+    margin-left: 2rem;
+    cursor: pointer;
+}
+
+.header_funtion_title i:hover {
+    color: orange;
+}
+
+.header_funtion_title i {
+    float: left;
+    font-size: 25px;
+    color: #2c3e50;
+    line-height: 5rem;
+    transition: 0.1s all;
+}
+
+.header_funtion_title p {
+    margin-top: 1rem;
+}
+
+.header_funtion_title a {
+    float: left;
+}
+
+.header_funtion_title span {
+    float: left;
+    margin-left: 0.3rem;
+    color: #34495e;
+    font-size: 13px;
+    font-weight: 500;
+    margin-top: 0.2rem;
+}
+
+.header_funtion_title span:hover {
+    color: orange;
+}
+
+.header_funtion_title span small {
+    color: #7f8c8d;
+    font-weight: 500;
+}
+
+
+/*---login---*/
+
+.modal_login_edit {
+    max-width: 850px !important;
+}
+
+.modal_login_show {
+    height: 35rem!important;
+}
+
+.modal_content {
+    z-index: 1;
+}
+
+.modal_title {
+    width: 100%;
+}
+
+.popup_login_title {
+    width: 50%;
+}
+
+.modal_left {
+    float: left;
+    width: 40%;
+    height: 100%;
+}
+
+.modal_left img {
+    width: 100%;
+    margin-left: 2rem;
+    margin-top: 0.4rem;
+}
+
+.modal_right {
+    float: right;
+    margin-top: 3rem;
+    width: 60%;
+    height: 100%;
+}
+
+.login_form {
+    width: 80%;
+    margin-left: 10%;
+}
+
+.forgot_pass {
+    float: left;
+    width: 100%;
+}
+
+.forgot_pass a {
+    font-size: 13px;
+}
+
+.login_form button {
+    float: left;
+    margin-top: 0.7rem;
+    width: 100%;
+}
+
+.login_api {
+    float: left;
+    width: 100%;
+    margin-top: 1rem;
+}
+
+.login_api ul li {
+    float: left;
+    width: 30%;
+    height: 3rem !important;
+    margin-left: 0.6rem;
+}
+
+.login_api ul li a {
+    width: 100%;
+    height: 3rem!important;
+    padding: 10px 50px;
+    border: 2px solid #bdc3c7;
+    border-radius: 7px;
+    text-align: center;
+    cursor: pointer;
+}
+
+.login_api ul li a:hover {
+    color: orange;
+    border: 2px solid orange;
+    border-radius: 7px;
+}
+
+.login_api ul li a i {
+    font-size: 20px;
+    line-height: 3rem;
+    color: black;
+}
+
+.register {
+    margin-top: 0.1rem;
+}
+
+.modal_left_register {
+    float: left;
+    width: 40%;
+    height: 100%;
+}
+
+.modal_left_register img {
+    width: 100%;
+    margin-top: 0.4rem;
+}
+
+.modal_right_register {
+    float: right;
+    margin-top: 0.4rem;
+    width: 55%;
+    height: 100%;
+}
+
+.modal_right_register span {
+    width: 7rem;
+    height: 2rem;
+}
+
+.modal_right_register button {
+    float: left;
+    width: 98%;
+    margin-left: 2%;
+}
+
+.show_funtion_login {
+    margin-top: -1rem!important;
+    width: 180px!important;
+    margin-left: -2rem!important;
+}
+
+.show_funtion_login a {
+    float: left;
+    height: 2.5rem;
+    font-weight: 600;
+    line-height: 2rem;
+    font-size: 13px;
+    transition: 0.3s all;
+    cursor: pointer;
+}
+
+.show_funtion_login a:hover {
+    background-color: #eb2f06;
+    color: white;
+}
+
+.show_funtion_login a:hover i {
+    color: white;
+}
+
+.show_funtion_login a i {
+    float: left;
+    width: 20%;
+    margin-top: -0.2rem;
+    margin-right: 0.5rem;
+    line-height: 2.5rem;
+    transition: 0.3s all;
+}
+
+.show_cart_header {
+    margin-top: -1rem!important;
+    width: 350px!important;
+    margin-left: -16.3rem!important;
+    min-height: 25rem;
+}
+
+.header_product {
+    float: left;
+    width: 100%;
+    height: 18rem;
+    overflow: auto;
+    border-bottom: 2px solid red;
+    overflow-x: hidden;
+}
+
+.header_product a {
+    width: 100%;
+    float: left;
+    height: 6rem;
+}
+
+.header_product a:hover .header_delete_product {
+    opacity: 1;
+}
+
+.header_infor_order {
+    float: left;
+    width: 80%;
+}
+
+.header_delete_product {
+    width: 20%;
+    float: right;
+    opacity: 0;
+    transition: 0.3s;
+}
+
+.header_delete_product i {
+    width: 140%;
+    text-align: center;
+    color: #b2bec3;
+    transition: 0.3s;
+    margin-left: 1rem;
+}
+
+.header_delete_product i:hover {
+    color: red;
+}
+
+.header_infor_order img {
+    float: left;
+    margin-top: 0.5rem;
+    width: 28%;
+    margin-left: -1.3rem;
+}
+
+.item-name {
+    width: 53%;
+    text-transform: uppercase;
+    margin-top: 1rem!important;
+    font-size: 15px !important;
+    color: black !important;
+}
+
+.item-price {
+    float: left;
+    margin-right: 8px;
+    margin-top: 1rem!important;
+    color: #1e90ff !important;
+    margin-left: -7.5rem !important;
+}
+
+.item-quantity {
+    float: right;
+    margin-top: 1rem!important;
+    color: #95a5a6 !important;
+    margin-left: -3rem!important;
+}
+
+.item_quantity small {
+    margin-left: 0.2rem !important;
+}
+
+.header_checkout {
+    float: left;
+    width: 100%;
+}
+
+.header_checkout ul li {
+    float: left;
+    width: 100%;
+}
+
+.header_total {
+    margin-left: 10%;
+    margin-top: 0.5rem;
+    font-size: 15px;
+    font-weight: 600;
+}
+
+.header_total span {
+    float: right;
+    margin-right: 20%;
+    color: red;
+    font-size: 15px;
+    margin-top: -0.05rem;
+}
+
+.header_funtion_checkout {
+    width: 100%;
+    margin-top: 1rem;
+}
+
+.header_funtion_checkout a {
+    width: 100%;
+}
+
+.header_funtion_checkout a button {
+    width: 90%;
+    margin-left: 5%;
+}
+
+
+/*--main nav--*/
+
+.main_nav {
+    float: left;
+    margin-top: -0.8rem !important;
+    margin-left: 7.15% !important;
+}
+
+.main_nav_title li {
+    float: left;
+    margin-left: 1rem;
+}
+
+.dropdown:hover>.dropdown-menu {
+    display: block;
+}
+
+.dropdown>.dropdown-toggle:active {
+    pointer-events: none;
+}
+
+.main_nav_title li a {
+    font-weight: 500;
+    color: black!important;
+    text-decoration: none;
+    position: relative;
+    transition: .3s ease;
+    background-image: linear-gradient(180deg, transparent 89%, #ff5722 0);
+    background-repeat: no-repeat;
+    background-size: 0 100%;
+    cursor: pointer;
+}
+
+.main_nav_title li a:hover {
+    background-size: 100% 100%;
+    color: red !important;
+}
+
+.main_nav_show {
+    z-index: 2;
+    background-color: white!important;
+}
+
+.header_select_brand li {
+    width: 80%;
+}
+
+
+/*---end main header---*/
+
+
+/*---end header---*
+
+/*--main_page--*/
+
+.main_page {
+    float: left;
+    width: 100%;
+    margin-top: 10.4rem;
+    background-color: #f8f9fa;
+}
+
+
+/*--bath--*/
+
+.bath {
+    float: left;
+    width: 100%;
+    border-bottom: 1px solid#ecf0f1;
+}
+
+.bath ol {
+    background-color: #f8f9fa !important;
+    padding: 10px 0 0 10px;
+}
+
+.bath_edit {
+    margin-left: 9.3%;
+}
+
+
+/*--end bath--*/
+
+.item {
+    height: 26rem;
+    width: 90%;
+    background-color: white;
+    border-radius: 8px;
+    border: 2px solid #ecf0f1;
+    transition: 0.3s linear;
+    overflow: hidden;
+    margin-top: 0.5rem;
+    cursor: pointer;
+}
+
+.item:hover {
+    box-shadow: 0 8px 8px 0 rgba(103, 151, 255, .11), 0 12px 18px 0 rgba(103, 151, 255, .11);
+    border: 2px solid orange;
+}
+
+.item_img {
+    float: left;
+    width: 100%;
+    height: 18rem;
+    overflow: hidden;
+}
+
+.item_img img {
+    width: 100%;
+    margin-top: 1rem;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    transition: 0.3s;
+}
+
+.item_img img:hover {
+    transform: scale(1.05);
+}
+
+.item_title {
+    width: 100%;
+    margin-left: 5%;
+    margin-bottom: 5px;
+}
+
+.item_title a {
+    text-align: center;
+    color: black;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+.item_title a:hover {
+    color: rgb(233, 77, 77);
+    text-decoration: none;
+}
+
+.item_price {
+    float: left;
+    width: 100%;
+    margin-left: 5%;
+    font-size: 18px;
+    border-radius: 5px;
+    color: #c0392b;
+    font-weight: 600;
+}
+
+.buy_now {
+    float: left;
+    width: 100%;
+    margin-top: 5px;
+}
+
+.buy_now button {
+    width: 90%;
+    margin-left: 5%;
+    margin-bottom: 2rem;
+}
+
+.buy_now button:hover {
+    background-color: red;
+}
+
+
+/*-banner-*/
+
+#banner {
+    width: 80%;
+    margin-left: 10%;
+    z-index: 1;
+}
+
+.carousel-inner img {
+    width: 100%;
+    height: 100%;
+}
+
+
+/*--end banner--*/
+
+
+/*--footer--*/
+
+.footer {
+    float: left;
+    margin-top: 3rem;
+    width: 100%;
+    background-color: #353b48;
+}
+
+.footer_title {
+    float: left;
+    margin-top: 1rem;
+    width: 80%;
+    margin-left: 10%;
+}
+
+.footer_title ul {
+    margin-left: 0 !important;
+}
+
+.footer_title h1 {
+    font-size: 25px;
+    margin-bottom: 2rem;
+    color: white;
+}
+
+.footer_title ul li {
+    margin-bottom: 1rem;
+}
+
+.footer_title ul li a {
+    color: #bdc3c7;
+    font-size: 18px;
+    font-weight: 400;
+}
+
+.footer_title ul li a:hover {
+    text-decoration: none;
+    color: white;
+}
+
+.footer_title ul li a i {
+    width: 2%;
+}
+
+.footer_title ul li a span {
+    margin-left: 0.8rem;
+}
+
+.footer_title ul li a img {
+    margin-left: -0.8rem;
+    width: 70%;
+}
+
+.socialNetwork a {
+    color: white;
+    font-size: 13px;
+}
+
+.socialNetwork a:hover {
+    color: orange;
+}
+
+::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+    background-color: #F5F5F5;
+}
+
+#scroll_bar_edit::-webkit-scrollbar {
+    width: 10px;
+    background-color: #F5F5F5;
+}
+
+#scroll_bar_edit::-webkit-scrollbar-thumb {
+    background-color: #6b6565;
+    border: 2px solid #555555;
+}
+
+#forgot_password {
+    width: 100%;
+    text-align: center;
+}
+
+.btn_forgot_password {
+    width: 100%;
+}
+
+.edit_modal_forgot_password {
+    width: 350px !important;
+    margin-left: 4rem!important;
+}
+
+.forgot_pass_body img {
+    width: 100%;
+}
+
+.forgot_pass_body p {
+    width: 100%;
+    text-align: center;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+.dropdown-item.active,
+.dropdown-item:active {
+    background-color: white!important;
+}

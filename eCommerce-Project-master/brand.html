@@ -1,0 +1,511 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BTEC STORE</title>
+    <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700,900" rel="stylesheet">
+    <link rel="stylesheet" href="css/griddemo1.css">
+    <link rel="stylesheet" href="css/brand.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</head>
+
+<body>
+
+    <!-- HEADER -->
+    <header class="header">
+        <!-- Topbar-->
+        <div class="top_header topbar topbar-dark bg-dark">
+            <ul class="title_top_header nav">
+                <li class="nav-item">
+                    <a class="nav-link" href="#"><i class="fas fa-mobile-alt"></i><span>  0387798072</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#"><i class="far fa-envelope"></i><span> BTECSTORE@FPT.EDU.VN</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#"><i class="fas fa-map-marker-alt"></i><span>  107 Nguyen Phong Sac, Dich Vong Hau, Cau Giay, Ha Noi.</span></a>
+                </li>
+            </ul>
+        </div>
+        <div class="main_header navbar-sticky">
+            <div class="title_main_header navbar navbar-expand-lg navbar-light">
+                <div class="main_header_title container">
+                    <a class="logo_img navbar-brand d-none d-sm-block mr-3 flex-shrink-0" href="index.html"><img src="img/logoshop.png" alt=""></a>
+                    <a class="logo_img_rps navbar-brand d-sm-none mr-2" href="index.html"><img src="img/logoshop.png" alt=""></a>
+                    <!---search--->
+                    <div class="search_box input-group-overlay d-none d-lg-flex mx-4">
+                        <input class="form-control" type="text" placeholder="Search" aria-label="Search">
+                        <a class="search_btn" href=""><i class="fas fa-search"></i></a>
+                    </div>
+                    <!--end search-->
+                    <div class="header_funtion navbar-toolbar d-flex flex-shrink-0 align-items-center drop_down">
+                        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse"><span><i class="fas fa-bars"></i></span></button>
+                        <div class="header_funtion_title navbar-tool-icon-box"><a href=""><i class="far fa-heart"></i><span class="navbar-tool-tooltip"></span></a>
+                        </div>
+                        <div class="header_funtion_title navbar-tool-icon-box"><a href="" data-toggle="modal" data-target="#modal_login"><i class="far fa-user"></i>
+                                <p class="navbar-tool d-none d-lg-flex"><span class="navbar-tool-tooltip"><small >Hello, Sign in</small></br>MY ACCOUNT</span></p></a>
+                            <!-- Modal login-->
+                            <div class="modal fade" id="modal_login" tabindex="-1" aria-labelledby="LoginLabel" aria-hidden="true">
+                                <div class=" modal-dialog modal_login_edit">
+                                    <div class=" modal-content">
+                                        <div class="modal_login_show modal-body">
+                                            <nav>
+                                                <div class="nav modal_title nav-tabs" id="nav-tab" role="tablist">
+                                                    <a class="nav-item nav-link active popup_login_title" id="nav-login-tab" data-toggle="tab" href="#nav-login" role="tab" aria-controls="nav-login" aria-selected="true">LOGIN</a>
+                                                    <a class="nav-item nav-link popup_login_title" id="nav-register-tab" data-toggle="tab" href="#nav-register" role="tab" aria-controls="nav-register" aria-selected="false">REGISTER</a>
+                                                </div>
+                                            </nav>
+                                            <div class="tab-content" id="nav-tabContent">
+                                                <div class="tab-pane fade show active" id="nav-login" role="tabpanel" aria-labelledby="nav-login-tab">
+                                                    <div class="modal_left">
+                                                        <img src="img/login.png" alt=""></div>
+                                                    <div class="modal_right">
+                                                        <form class="login_form">
+                                                            <div class="form-group">
+                                                                <label for="exampleInputEmail1">Email address</label>
+                                                                <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
+                                                                <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+                                                            </div>
+                                                            <div class="form-group">
+                                                                <label for="exampleInputPassword1">Password</label>
+                                                                <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+                                                            </div>
+                                                            <div class="forgot_pass">
+                                                                <a href="">Forgot your password?</a>
+                                                            </div>
+                                                            <button type="signin" class="btn btn-primary">SIGN IN</button>
+                                                            <div class="login_api">
+                                                                <ul>
+                                                                    <li>
+                                                                        <a href=""><i class="fab fa-facebook-square"></i></a>
+                                                                    </li>
+                                                                    <li>
+                                                                        <a href=""><i class="fab fa-google"></i></a>
+                                                                    </li>
+                                                                    <li>
+                                                                        <a href=""><i class="fab fa-github"></i></a>
+                                                                    </li>
+                                                                </ul>
+                                                            </div>
+                                                        </form>
+                                                    </div>
+                                                </div>
+                                                <div class="register tab-pane fade" id="nav-register" role="tabpanel" aria-labelledby="nav-register-tab">
+                                                    <div class="modal_left_register">
+                                                        <img src="im/login.png" alt="">
+                                                    </div>
+                                                    <div class="modal_right_register">
+                                                        <div class="input-group mb-3">
+                                                            <span>Fullname :</span>
+                                                            <input type="text" class="form-control" placeholder="Fullname" aria-label="Fullname" aria-describedby="basic-addon1">
+                                                        </div>
+                                                        <div class="input-group mb-3">
+                                                            <span>Numberphone :</span>
+                                                            <input type="text" class="form-control" placeholder="Numberphone" aria-label="Numberphone" aria-describedby="basic-addon1">
+                                                        </div>
+                                                        <div class="input-group mb-3">
+                                                            <span>Email :</span>
+                                                            <input type="text" class="form-control" placeholder="Email" aria-label="Email" aria-describedby="basic-addon1">
+                                                        </div>
+                                                        <div class="input-group mb-3">
+                                                            <span>Address:</span>
+                                                            <input type="text" class="form-control" placeholder="Address" aria-label="Address" aria-describedby="basic-addon1">
+                                                        </div>
+                                                        <div class="input-group mb-3">
+                                                            <span>Birth Of Date:</span>
+                                                            <input type="date" class="form-control" aria-describedby="basic-addon1">
+                                                        </div>
+                                                        <div class=" input-group mb-3">
+                                                            <span>Gender:</span>
+                                                            <select>
+                                                               <option value="gender">Male</option>
+                                                               <option value="gender">Female</option>
+                                                               <option value="gender">Other</option>
+                                                            </select>
+                                                        </div>
+                                                        <div class="input-group mb-3">
+                                                            <span>Password:</span>
+                                                            <input type="text" class="form-control" placeholder="Password" aria-label="Password" aria-describedby="basic-addon1">
+                                                        </div>
+                                                        <div class="input-group mb-3">
+                                                            <span>Retype Password:</span>
+                                                            <input type="text" class="form-control" placeholder="Password" aria-label="Password" aria-describedby="basic-addon1">
+                                                        </div>
+                                                        <button type="button" class="btn btn-warning">REGISTER</button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="header_funtion_title header_cart navbar-tool-icon-box"><a href=""><i class="fab fa-opencart"></i>
+                                <p class="navbar-tool d-none d-lg-flex "><span class="navbar-tool-tooltip"><small>My Cart</small></br>$265.00</p>
+                                </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="main_nav_show navbar navbar-expand-lg navbar-light navbar-stuck-menu mt-n2 pt-0 pb-2">
+            <div class="main_nav container">
+                <div class="collapse navbar-collapse" id="navbarCollapse">
+                    <!-- Search-->
+                    <div class="input-group-overlay d-lg-none my-3">
+                        <div class="input-group-prepend-overlay"><span class="input-group-text"><i class="czi-search"></i></span></div>
+                        <input class="form-control prepended-form-control" type="text" placeholder="Search...">
+                    </div>
+                    <!-- Primary menu-->
+                    <ul class="main_nav_title navbar-nav">
+                        <li class=" nav-item"><a class="nav-link" href="#">Home</a></li>
+                        <li class="nav-item dropdown"><a class="nav-link dropdown-toggle" href="#" data-toggle="dropdown">Products</a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#">Iphone</a></li>
+                                <li><a class="dropdown-item" href="#">Samsung</a></li>
+                                <li><a class="dropdown-item" href="#">Vsmart</a></li>
+                                <li><a class="dropdown-item" href="#">Xiaomi</a></li>
+                                <li><a class="dropdown-item" href="#">Oppo</a></li>
+                                <li><a class="dropdown-item" href="#">Huawei</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item"><a class="nav-link" href="#">Contact</a>
+                        </li>
+                        <li class="nav-item"><a class="nav-link" href="#">Service</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#">About Us</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        </div>
+    </header>
+    <section class="main_page">
+        <!--bath-->
+        <nav class="bath" aria-label="breadcrumb">
+            <ol class="breadcrumb">
+                <li class="bath_edit breadcrumb-item"><a href="index.html">Home</a></li>
+                <li class="breadcrumb-item"><a href="#">Products</a></li>
+                <li class="breadcrumb-item active" aria-current="page">Brand</li>
+            </ol>
+        </nav>
+        <!--banner-->
+        <div id="banner" class="carousel slide" data-ride="carousel">
+            <ul class="carousel-indicators">
+                <li data-target="#banner" data-slide-to="0" class="active"></li>
+                <li data-target="#banner" data-slide-to="1"></li>
+                <li data-target="#banner" data-slide-to="2"></li>
+                <li data-target="#banner" data-slide-to="3"></li>
+            </ul>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="img/banner1.png" alt="1">
+                </div>
+                <div class="carousel-item">
+                    <img src="img/banner2.png" alt="2">
+                </div>
+                <div class="carousel-item">
+                    <img src="img/banner3.png" alt="3">
+                </div>
+                <div class="carousel-item">
+                    <img src="img/banner4.png" alt="4">
+                </div>
+            </div>
+            <a class="carousel-control-prev" href="#banner" data-slide="prev">
+                <span class="carousel-control-prev-icon"></span>
+            </a>
+            <a class="carousel-control-next" href="#banner" data-slide="next">
+                <span class="carousel-control-next-icon"></span>
+            </a>
+        </div>
+        <!--end banner-->
+
+        <div class="show_brand">
+            <div class="row">
+                <div class="col-sm-3">
+                    <div class="filter_categories">
+                        <h1>CATEGORIES</h1>
+                        <form>
+                            <input type="radio" id="all" name="brand" value="all" checked>
+                            <label for="all">All</label><br>
+                            <input type="radio" id="iphone" name="brand" value="iphone">
+                            <label for="iphone">Iphone</label><br>
+                            <input type="radio" id="samsung" name="brand" value="samsung">
+                            <label for="samsung">Samsung</label><br>
+                            <input type="radio" id="vsmart" name="brand" value="vsmart">
+                            <label for="vsmart">Vsmart</label><br>
+                            <input type="radio" id="xiaomi" name="brand" value="xiaomi">
+                            <label for="xiaomi">Xiaomi</label><br>
+                            <input type="radio" id="oppo" name="brand" value="oppo">
+                            <label for="oppo">Oppo</label>
+                        </form>
+                        <h1>PRICE</h1>
+                        <form>
+                            <input type="radio" id="50-100$" name="price" value="iphone">
+                            <label for="50-100$">50-100$</label><br>
+                            <input type="radio" id="100-500$" name="price" value="100-500$">
+                            <label for="100-500$">100-500$</label><br>
+                            <input type="radio" id="500-1000$" name="price" value="500-1000$">
+                            <label for="500-1000$">500-1000$</label><br>
+                            <input type="radio" id="xiaomi" name="price" value="1000-1500$">
+                            <label for="1000-1500$">1000-1500$</label><br>
+                            <input type="radio" id="over" name="price" value="over">
+                            <label for="over">Over 1500$</label>
+                        </form>
+                        <!-- <h1>TOP SELLING</h1>
+                        <div class="top_selling_brand">
+                            <ul>
+                                <li><a href=""></a></li>
+                                <li><a href=""></a></li>
+                                <li><a href=""></a></li>
+                            </ul>
+                        </div> -->
+                    </div>
+                </div>
+                <div class="col-sm-9">
+                    <div class="filter_right">
+                        <h1>BRAND</h1>
+                        <div class="select_img_brand">
+                            <ul>
+                                <li><img src="https://img.fpt.shop/w_108/h_40/f_jpg/cmpr_10/m_letterbox_ffffff_100/https://fptshop.com.vn/Uploads/Originals/2020/8/26/637340490193124614_iPhone-Apple@2x.jpg" alt=""></li>
+                                <li><img src="https://img.fpt.shop/w_108/h_40/f_jpg/cmpr_10/m_letterbox_ffffff_100/https://fptshop.com.vn/Uploads/Originals/2020/8/26/637340490904217021_Samsung@2x.jpg" alt=""></li>
+                                <li><img src="https://img.fpt.shop/w_108/h_40/f_jpg/cmpr_10/m_letterbox_ffffff_100/https://fptshop.com.vn/Uploads/Originals/2020/8/26/637340491898901930_Vsmart@2x.jpg" alt=""></li>
+                                <li><img src="https://img.fpt.shop/w_108/h_40/f_jpg/cmpr_10/m_letterbox_ffffff_100/https://fptshop.com.vn/Uploads/Originals/2020/8/26/637340491898901930_Xiaomi@2x.jpg" alt=""></li>
+                                <li><img src="https://img.fpt.shop/w_108/h_40/f_jpg/cmpr_10/m_letterbox_ffffff_100/https://fptshop.com.vn/Uploads/Originals/2020/8/26/637340491304997311_Oppo@2x.jpg" alt=""></li>
+                                <li><img src="https://img.fpt.shop/w_108/h_40/f_jpg/cmpr_10/m_letterbox_ffffff_100/https://fptshop.com.vn/Uploads/Originals/2020/8/26/637340493755614653_Nokia@2x.jpg" alt=""></li>
+                                <li><img src="https://img.fpt.shop/w_108/h_40/f_jpg/cmpr_10/m_letterbox_ffffff_100/https://fptshop.com.vn/Uploads/Originals/2020/8/26/637340491898745716_Vivo@2x.jpg" alt=""></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="show_br">
+                        <div class="show_product_brand">
+                            <div class="row">
+                                <div class="col-sm">
+                                    <div class="item">
+                                        <div class="item_img">
+                                            <a href=""><img src="https://fptshop.com.vn/Uploads/Originals/2020/2/12/637170945536714482_ss-s20-plus-den-1.png" class="img-fluid" alt=""></a>
+                                        </div>
+                                        <div class="item_title"><a href="">Samsung Galaxy S20+</a></div>
+                                        <div class="item_price">750$</div>
+                                        <div class="buy_now">
+                                            <a href="#">
+                                                <button type="button" class="btn btn-danger">ADD TO CART</button>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-sm">
+                                    <div class="item">
+                                        <div class="item_img">
+                                            <a href=""><img src="https://fptshop.com.vn/Uploads/Originals/2020/2/12/637170945536714482_ss-s20-plus-den-1.png" class="img-fluid" alt=""></a>
+                                        </div>
+                                        <div class="item_title"><a href="">Samsung Galaxy S20+</a></div>
+                                        <div class="item_price">750$</div>
+                                        <div class="buy_now">
+                                            <a href="#">
+                                                <button type="button" class="btn btn-danger">ADD TO CART</button>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-sm">
+                                    <div class="item">
+                                        <div class="item_img">
+                                            <a href=""><img src="https://fptshop.com.vn/Uploads/Originals/2020/2/12/637170945536714482_ss-s20-plus-den-1.png" class="img-fluid" alt=""></a>
+                                        </div>
+                                        <div class="item_title"><a href="">Samsung Galaxy S20+</a></div>
+                                        <div class="item_price">750$</div>
+                                        <div class="buy_now">
+                                            <a href="#">
+                                                <button type="button" class="btn btn-danger">ADD TO CART</button>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-sm">
+                                    <div class="item">
+                                        <div class="item_img">
+                                            <a href=""><img src="https://fptshop.com.vn/Uploads/Originals/2020/2/12/637170945536714482_ss-s20-plus-den-1.png" class="img-fluid" alt=""></a>
+                                        </div>
+                                        <div class="item_title"><a href="">Samsung Galaxy S20+</a></div>
+                                        <div class="item_price">750$</div>
+                                        <div class="buy_now">
+                                            <a href="#">
+                                                <button type="button" class="btn btn-danger">ADD TO CART</button>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-sm">
+                                    <div class="item">
+                                        <div class="item_img">
+                                            <a href=""><img src="https://fptshop.com.vn/Uploads/Originals/2020/2/12/637170945536714482_ss-s20-plus-den-1.png" class="img-fluid" alt=""></a>
+                                        </div>
+                                        <div class="item_title"><a href="">Samsung Galaxy S20+</a></div>
+                                        <div class="item_price">750$</div>
+                                        <div class="buy_now">
+                                            <a href="#">
+                                                <button type="button" class="btn btn-danger">ADD TO CART</button>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-sm">
+                                    <div class="item">
+                                        <div class="item_img">
+                                            <a href=""><img src="https://fptshop.com.vn/Uploads/Originals/2020/2/12/637170945536714482_ss-s20-plus-den-1.png" class="img-fluid" alt=""></a>
+                                        </div>
+                                        <div class="item_title"><a href="">Samsung Galaxy S20+</a></div>
+                                        <div class="item_price">750$</div>
+                                        <div class="buy_now">
+                                            <a href="#">
+                                                <button type="button" class="btn btn-danger">ADD TO CART</button>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-sm">
+                                    <div class="item">
+                                        <div class="item_img">
+                                            <a href=""><img src="https://fptshop.com.vn/Uploads/Originals/2020/2/12/637170945536714482_ss-s20-plus-den-1.png" class="img-fluid" alt=""></a>
+                                        </div>
+                                        <div class="item_title"><a href="">Samsung Galaxy S20+</a></div>
+                                        <div class="item_price">750$</div>
+                                        <div class="buy_now">
+                                            <a href="#">
+                                                <button type="button" class="btn btn-danger">ADD TO CART</button>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-sm">
+                                    <div class="item">
+                                        <div class="item_img">
+                                            <a href=""><img src="https://fptshop.com.vn/Uploads/Originals/2020/2/12/637170945536714482_ss-s20-plus-den-1.png" class="img-fluid" alt=""></a>
+                                        </div>
+                                        <div class="item_title"><a href="">Samsung Galaxy S20+</a></div>
+                                        <div class="item_price">750$</div>
+                                        <div class="buy_now">
+                                            <a href="#">
+                                                <button type="button" class="btn btn-danger">ADD TO CART</button>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-sm">
+                                    <div class="item">
+                                        <div class="item_img">
+                                            <a href=""><img src="https://fptshop.com.vn/Uploads/Originals/2020/2/12/637170945536714482_ss-s20-plus-den-1.png" class="img-fluid" alt=""></a>
+                                        </div>
+                                        <div class="item_title"><a href="">Samsung Galaxy S20+</a></div>
+                                        <div class="item_price">750$</div>
+                                        <div class="buy_now">
+                                            <a href="#">
+                                                <button type="button" class="btn btn-danger">ADD TO CART</button>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="pagination_page">
+                        <button type="button" class="btn btn-outline-secondary">View More<i class="fas fa-sort-down"></i></button>
+                    </div>
+                </div>
+            </div>
+            <!-- <div class="show_brand_left">
+                
+            </div> -->
+            <!-- <div class="show_brand_right">
+                
+            </div> -->
+
+        </div>
+    </section>
+    <footer class="footer">
+        <div class="footer_title">
+            <div class="row">
+                <div class="col-sm-6 ">
+                    <h1>BTEC STORE</h1>
+                    <ul>
+                        <li>
+                            <a href=""><i class="fas fa-map-marker-alt"></i><span>107 Nguyen Phong Sac, Dich Vong Hau, Cau Giay, Ha Noi.</span></a>
+                        </li>
+                        <li>
+                            <a href=""><i class="fas fa-mobile-alt"></i><span>0387798072</span></a>
+                        </li>
+                        <li>
+                            <a href=""><i class="far fa-envelope"></i><span>BTECSTORE@GMAIL.COM</span></a>
+                        </li>
+                    </ul>
+
+                </div>
+                <div class="col-sm-3 ">
+                    <h1>Customer Support</h1>
+                    <ul>
+                        <li>
+                            <a href=""><i class="far fa-question-circle"></i><span>  Shopping Guide</span></a>
+                        </li>
+                        <li>
+                            <a href=""><i class="far fa-question-circle"></i><span>  Payment Guide</span></a>
+                        </li>
+                        <li>
+                            <a href=""><i class="far fa-question-circle"></i><span>  Return Policy</span></a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-sm-3 ">
+                    <h1>Payment Methods</h1>
+                    <ul>
+                        <li>
+                            <a href=""><i class="fas fa-money-bill"></i><span>  Cash On Delivery</span></a>
+                        </li>
+                        <li>
+                            <a href=""><i class="fab fa-cc-paypal"></i><span>  Payment Via Paypal</span></a>
+                        </li>
+                        <li>
+                            <a href=""><img src="https://goccuaphu.com/wp-content/uploads/2017/10/huong-dan-tao-tai-khoan-paypal-cho-nguoi-moi-tu-a-z.png" alt=""></a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="socialNetwork">
+                <div class="row d-flex justify-content-center">
+                    <div class="col d-flex justify-content-center my-5 pt-1">
+                        <a class="fb-ic" href="">
+                            <i class="fab fa-facebook-f fa-lg white-text mx-3 mx-md-4 fa-2x"> </i>
+                        </a>
+                        <a class="tw-ic" href="">
+                            <i class="fab fa-twitter fa-lg white-text mx-3 mx-md-4 fa-2x"> </i>
+                        </a>
+                        <a class="gplus-ic" href="">
+                            <i class="fab fa-google-plus-g fa-lg white-text mx-3 mx-md-4 fa-2x"> </i>
+                        </a>
+                        <a class="li-ic" href="">
+                            <i class="fab fa-linkedin-in fa-lg white-text mx-3 mx-md-4 fa-2x"> </i>
+                        </a>
+                        <a class="ins-ic" href="">
+                            <i class="fab fa-instagram fa-lg white-text mx-3 mx-md-4 fa-2x"> </i>
+                        </a>
+                        <a class="pin-ic" href="">
+                            <i class="fab fa-pinterest fa-lg white-text mx-3 mx-md-4 fa-2x"> </i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+    </footer>
+
+</body>
+
+</html>

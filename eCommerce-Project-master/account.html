@@ -1,0 +1,1741 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Account</title>
+    <link rel="icon" href="img/icon.png">
+    <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700,900" rel="stylesheet">
+    <link rel="stylesheet" href="css/griddemo1.css">
+    <link rel="stylesheet" href="css/account.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+</head>
+
+<body>
+    <section class="main_page  ">
+        <!--bath-->
+        <nav class="bath" aria-label="breadcrumb">
+            <ol class="breadcrumb">
+                <li class="bath_edit breadcrumb-item"><a href="index.html">Home</a></li>
+                <li class="breadcrumb-item active" aria-current="page">My Account</li>
+            </ol>
+        </nav>
+        <div class="infor_account ">
+            <div class="row">
+                <div class="funtion_account col-3">
+                    <div class="funtion_account_header">
+                        <div class="funtion_account_header-img">
+                            <img src="https://scontent.fhan3-1.fna.fbcdn.net/v/t1.0-9/49339024_2125777764330744_62499324709306368_n.jpg?_nc_cat=102&ccb=2&_nc_sid=174925&_nc_ohc=Iok9No9uZCgAX-ztA89&_nc_oc=AQm8o1E-NKwLkgXljqHrd89GDktZfSZ703pK_PChZe358yk1F3EjJ5zBLPUBqq3OwBk&_nc_ht=scontent.fhan3-1.fna&oh=94008b741b4264d07e631fbece092b98&oe=6007E6AB"
+                                alt="">
+                        </div>
+                        <div class="funtion_account_header-title">
+                            <h5>Tung Tran</h5>
+                            <span><i class="fas fa-user-edit"></i>EDIT INFORMATION</span>
+                        </div>
+                    </div>
+                    <div class="nav_funtion nav flex-column nav-pills" id="v-pills-tab" role="tablist" aria-orientation="vertical">
+                        <a class="color_nav_link nav-link active" id="v-pills-account-tab" data-toggle="pill" href="#v-pills-account" role="tab" aria-controls="v-pills-account" aria-selected="true"><i class="fas fa-user-circle"></i>MY ACCOUNT</a>
+                        <a class="color_nav_link nav-link" id="v-pills-address-tab" data-toggle="pill" href="#v-pills-address" role="tab" aria-controls="v-pills-address" aria-selected="false"><i class="fas fa-address-card"></i>MY ADDRESS</a>
+                        <a class="color_nav_link nav-link" id="v-pills-order-tab" data-toggle="pill" href="#v-pills-order" role="tab" aria-controls="v-pills-order" aria-selected="false"><i class="fas fa-archive"></i>MY ORDERS</a>
+                    </div>
+                </div>
+                <div class="show_funtion_account col-9">
+                    <div class="tab-content" id="v-pills-tabContent">
+
+                        <div class="tab-pane fade show active" id="v-pills-account" role="tabpanel" aria-labelledby="v-pills-account-tab">
+                            <div class="show_funtion_header">
+                                <h3>MY ACCOUNT</h3>
+                                <h5>Manage profile information for account security.</h5>
+                            </div>
+                            <div class="avatar_account">
+                                <img src="https://scontent.fhan3-1.fna.fbcdn.net/v/t1.0-9/49339024_2125777764330744_62499324709306368_n.jpg?_nc_cat=102&ccb=2&_nc_sid=174925&_nc_ohc=Iok9No9uZCgAX-ztA89&_nc_oc=AQm8o1E-NKwLkgXljqHrd89GDktZfSZ703pK_PChZe358yk1F3EjJ5zBLPUBqq3OwBk&_nc_ht=scontent.fhan3-1.fna&oh=94008b741b4264d07e631fbece092b98&oe=6007E6AB"
+                                    alt="">
+                                <input type="file" id="profile_img" name="profile_img" accept=".jpg,.jpeg,.png">
+                            </div>
+                            <div class="show_infor_account mt-3 ">
+                                <div class="input-group mb-3 ">
+                                    <div class="input-group-prepend ">
+                                        <span class="input-group">Username:</span>
+                                    </div>
+                                    <input type="text" class="form-control " placeholder="Username " id="usr " name="username ">
+                                </div>
+                                <div class="input-group mb-3 ">
+                                    <div class="input-group-prepend ">
+                                        <span class="input-group">Phonenumber:</span>
+                                    </div>
+                                    <input type="text" class="form-control " placeholder="Phonenumber " id="phone " name="Phonenumber">
+                                </div>
+                                <div class="input-group mb-3 ">
+                                    <div class="input-group-prepend ">
+                                        <span class="input-group">Email:</span>
+                                    </div>
+                                    <input type="text " class="form-control " placeholder="Email " id="email " name="Email ">
+                                </div>
+                                <div class="input-group mb-3 ">
+                                    <div class="input-group-prepend ">
+                                        <span class="input-group">Date Of Birth:</span>
+                                    </div>
+                                    <input type="date" class="form-control " placeholder="Date Of Birth " id="dateOfBirth" name="birth ">
+                                </div>
+                                <div class="input-group mb-3 ">
+                                    <div class="input-group-prepend ">
+                                        <span class="input-group">Gender:</span>
+                                    </div>
+                                    <form id="gender">
+                                        <input type="radio" id="male" name="gender" value="male">
+                                        <label for="male">Male</label>
+                                        <input type="radio" id="female" name="gender" value="female">
+                                        <label for="female">Female</label>
+                                        <input type="radio" id="other" name="gender" value="other">
+                                        <label for="other">Other</label>
+                                    </form>
+                                </div>
+                                <div class="changePass">
+                                    <a onclick="changePassword()">Change Password!</a>
+                                    <div class="ChangePassword" id="ChangePassword">
+                                        <div class="input-group mb-3 ">
+                                            <div class="input-group-prepend ">
+                                                <span class="input-group">Old Password:</span>
+                                            </div>
+                                            <input type="text" class="form-control " placeholder="Enter old password." id="oldPass" name="oldP">
+                                        </div>
+                                        <div class="input-group mb-3 ">
+                                            <div class="input-group-prepend ">
+                                                <span class="input-group">New Password:</span>
+                                            </div>
+                                            <input type="text" class="form-control " placeholder="Enter new password." id="newPass" name="newP">
+                                        </div>
+                                        <div class="input-group mb-3 ">
+                                            <div class="input-group-prepend ">
+                                                <span class="input-group">Retype Password:</span>
+                                            </div>
+                                            <input type="text" class="form-control " placeholder="Retype new password." id="ReNewPass" name="ReNP">
+                                        </div>
+                                    </div>
+                                </div>
+                                <button type="submit" class="btn btn-secondary">SUBMIT</button>
+                            </div>
+                        </div>
+                        <div class="tab-pane fade" id="v-pills-address" role="tabpanel" aria-labelledby="v-pills-address-tab">
+                            <ul class="address_account ">
+                                <div class="show_funtion_header">
+                                    <h3>MY ADDRESS</h3>
+                                    <h5>Manage address information for shipping.</h5>
+                                </div>
+                                <li class="add_new_address" data-toggle="modal" data-target="#add_newAddress"><i class="far fa-plus-square "></i><span>ADD NEW ADDRESS</span>
+                                    <div class="modal fade" id="add_newAddress" tabindex="-1" role="dialog" aria-labelledby="addNew_address" aria-hidden="true">
+                                        <div class="modal-dialog" role="document">
+                                            <div class="modal-content">
+                                                <div class="modal-header">
+                                                    <h5 class="modal-title" id="addNew_address">ADD NEW ADDRESS</h5>
+                                                </div>
+                                                <div class="modal-body">
+                                                    <form action="">
+                                                        <input type="text" class="form-control" id="inputName" placeholder="Name">
+                                                        <input type="text" class="form-control" id="inputEmail" placeholder="Email">
+                                                        <input type="text" class="form-control" id="inputPhonenumber" placeholder="Phonenumber">
+                                                        <input type="text" class="form-control" id="inputAddress" placeholder="Address">
+                                                    </form>
+                                                </div>
+                                                <div class="modal-footer">
+                                                    <button type="button" class="btn btn-primary">CONFIRM</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </li>
+                                <li class="default_address list_address ">
+                                    <div class="infor_address ">
+                                        <h1>TRAN THANH TUNG <span><i class="far fa-check-circle "></i>DEFAULT ADDRESS</span></h1>
+                                        <table>
+                                            <tbody>
+                                                <tr class="title_infor ">
+                                                    <th>Address:</th>
+                                                    <td>107 Nguyen Phong Sac, Dich Vong Hau, Cau Giay, Ha Noi.</td>
+                                                </tr>
+                                                <tr class="title_infor ">
+                                                    <th>Phonenumber:</th>
+                                                    <td>0123456789</td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                    <div class="function_address">
+                                        <button type="button" class="btn btn-warning">UPDATE</button>
+                                        <button type="button" class="btn btn-danger">DELETE</button>
+                                    </div>
+                                </li>
+                                <li class="list_address ">
+                                    <div class="infor_address ">
+                                        <h1>TRAN THANH TUNG</h1>
+                                        <table>
+                                            <tbody>
+                                                <tr class="title_infor ">
+                                                    <th>Address:</th>
+                                                    <td>107 Nguyen Phong Sac, Dich Vong Hau, Cau Giay, Ha Noi.</td>
+                                                </tr>
+                                                <tr class="title_infor ">
+                                                    <th>Phonenumber:</th>
+                                                    <td>0123456789</td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                    <div class="function_address">
+                                        <button type="button" class="btn btn-warning">UPDATE</button>
+                                        <button type="button" class="btn btn-danger">DELETE</button>
+                                    </div>
+                                </li>
+                                <li class="list_address ">
+                                    <div class="infor_address ">
+                                        <h1>TRAN THANH TUNG</h1>
+                                        <table>
+                                            <tbody>
+                                                <tr class="title_infor ">
+                                                    <th>Address:</th>
+                                                    <td>107 Nguyen Phong Sac, Dich Vong Hau, Cau Giay, Ha Noi.</td>
+                                                </tr>
+                                                <tr class="title_infor ">
+                                                    <th>Phonenumber:</th>
+                                                    <td>0123456789</td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                    <div class="function_address">
+                                        <button type="button" class="btn btn-warning">UPDATE</button>
+                                        <button type="button" class="btn btn-danger">DELETE</button>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="tab-pane fade" id="v-pills-order" role="tabpanel" aria-labelledby="v-pills-order-tab">
+                            <div class="show_funtion_header">
+                                <h3>MY ORDER <small>(16 ORDERS)</small></h3>
+                                <h5>Manage order information for account customer.</h5>
+                            </div>
+                            <table class="infor_orders table ">
+                                <thead>
+                                    <tr>
+                                        <th>Order ID</th>
+                                        <th>Date Of Purchase</th>
+                                        <th class="list_product_orders ">Products</th>
+                                        <th>Grand Total</th>
+                                        <th>Status</th>
+                                    </tr>
+                                </thead>
+                                <tbody class="list_orders ">
+                                    <tr>
+                                        <td><a href="" data-toggle="modal" data-target="#show_detail_order">#111111</a>
+                                            <!-- Modal -->
+                                            <div class="modal fade " id="show_detail_order" tabindex="-1 " aria-labelledby="detail_order" aria-hidden="true ">
+                                                <div class=" modal-dialog modal_edit ">
+                                                    <div class=" modal-content modal_color ">
+                                                        <div class="modal-header modal_header_color ">
+                                                            <h5 class="modal-title " id="detail_order">STATUS ORDER:<span>Delivered</span></h5>
+
+                                                        </div>
+                                                        <div class=" modal-body ">
+                                                            <div class="popup_detail_order container ">
+                                                                <h2>DETAIL ORDER: <span>#11111111</span></h2>
+                                                                <p>Order date: <span>07/11/2020</span></p>
+                                                                <div class="infor_detail_order container-fluid ">
+                                                                    <div class="row ">
+                                                                        <div class="detail_infor_order col ">
+                                                                            <ul>
+                                                                                <li>
+                                                                                    <p>RECEIVER'S ADDRESS</p>
+                                                                                </li>
+                                                                                <li class="infor_cus ">
+                                                                                    <h1>TRAN THANH TUNG</h1>
+                                                                                    <h2>Address:
+                                                                                        <Span>107 Nguyen Phong Sac, Dich Vong Hau, Cau Giay, Ha Noi.</Span>
+                                                                                    </h2>
+                                                                                    <h2>Phonenumber:<span>0123456789</span></h2>
+                                                                                </li>
+                                                                            </ul>
+                                                                        </div>
+                                                                        <div class="detail_infor_order col ">
+                                                                            <ul>
+                                                                                <li>
+                                                                                    <p>FORM OF DELIVERY</p>
+                                                                                </li>
+                                                                                <li class="infor_cus ">
+                                                                                    <p>FREESHIP</p>
+                                                                                </li>
+                                                                            </ul>
+                                                                        </div>
+                                                                        <div class="detail_infor_order col ">
+                                                                            <ul>
+                                                                                <li>
+                                                                                    <p>PAYMENT METHOD</p>
+                                                                                </li>
+                                                                                <li class="infor_cus ">
+                                                                                    <p>CASH PAYMENT ON RECEIPT OF GOODS</p>
+                                                                                </li>
+                                                                            </ul>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                                <table class="modal_tbl table ">
+                                                                    <thead>
+                                                                        <tr>
+                                                                            <th class="modal_prd ">PRODUCTS</th>
+                                                                            <th class="modal_prd_inf ">PRICE</th>
+                                                                            <th class="modal_prd_inf ">QUANTITY</th>
+                                                                            <th class="modal_prd_inf ">SALE</th>
+                                                                            <th class="modal_prd_inf ">TOTAL</th>
+                                                                        </tr>
+                                                                    </thead>
+                                                                    <tbody>
+                                                                        <tr>
+                                                                            <td>SAMSUNG GALAXY NOTE 20 ULTRA</td>
+                                                                            <td>$4000</td>
+                                                                            <td>3</td>
+                                                                            <td>$0</td>
+                                                                            <td>$12000</td>
+                                                                        </tr>
+                                                                        <tr>
+                                                                            <td>SAMSUNG GALAXY NOTE 20 ULTRA</td>
+                                                                            <td>$4000</td>
+                                                                            <td>3</td>
+                                                                            <td>$0</td>
+                                                                            <td>$12000</td>
+                                                                        </tr>
+                                                                        <tr>
+                                                                            <td>SAMSUNG GALAXY NOTE 20 ULTRA</td>
+                                                                            <td>$4000</td>
+                                                                            <td>3</td>
+                                                                            <td>$0</td>
+                                                                            <td>$12000</td>
+                                                                        </tr>
+                                                                        <tr>
+                                                                            <td>SAMSUNG GALAXY NOTE 20 ULTRA</td>
+                                                                            <td>$4000</td>
+                                                                            <td>3</td>
+                                                                            <td>$0</td>
+                                                                            <td>$12000</td>
+                                                                        </tr>
+                                                                        <tr>
+                                                                            <td>SAMSUNG GALAXY NOTE 20 ULTRA</td>
+                                                                            <td>$4000</td>
+                                                                            <td>3</td>
+                                                                            <td>$0</td>
+                                                                            <td>$12000</td>
+                                                                        </tr>
+                                                                    </tbody>
+                                                                </table>
+                                                            </div>
+                                                        </div>
+                                                        <div class="modal_footer modal-footer ">
+                                                            <button type="button " class="btn btn-dark" data-dismiss="modal">CONFIRM</button>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </td>
+                                        <td>20/11/2020</td>
+                                        <td>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsam delectus dolorem asperiores maiores commodi, ducimus recusandae hic impedit, facere eius vero unde dolorum esse ex? Veritatis, fuga. Vel, neque nam?</td>
+                                        <td>$5000</td>
+                                        <td>Delivered</td>
+                                    </tr>
+                                    <tr>
+                                        <td><a href="" data-toggle="modal" data-target="#show_detail_order">#111111</a>
+                                            <!-- Modal -->
+                                            <div class="modal fade " id="show_detail_order" tabindex="-1 " aria-labelledby="detail_order" aria-hidden="true ">
+                                                <div class=" modal-dialog modal_edit ">
+                                                    <div class=" modal-content modal_color ">
+                                                        <div class="modal-header modal_header_color ">
+                                                            <h5 class="modal-title " id="detail_order">STATUS ORDER:<span>Delivered</span></h5>
+
+                                                        </div>
+                                                        <div class=" modal-body ">
+                                                            <div class="popup_detail_order container ">
+                                                                <h2>DETAIL ORDER: <span>#11111111</span></h2>
+                                                                <p>Order date: <span>07/11/2020</span></p>
+                                                                <div class="infor_detail_order container-fluid ">
+                                                                    <div class="row ">
+                                                                        <div class="detail_infor_order col ">
+                                                                            <ul>
+                                                                                <li>
+                                                                                    <p>RECEIVER'S ADDRESS</p>
+                                                                                </li>
+                                                                                <li class="infor_cus ">
+                                                                                    <h1>TRAN THANH TUNG</h1>
+                                                                                    <h2>Address:
+                                                                                        <Span>107 Nguyen Phong Sac, Dich Vong Hau, Cau Giay, Ha Noi.</Span>
+                                                                                    </h2>
+                                                                                    <h2>Phonenumber:<span>0123456789</span></h2>
+                                                                                </li>
+                                                                            </ul>
+                                                                        </div>
+                                                                        <div class="detail_infor_order col ">
+                                                                            <ul>
+                                                                                <li>
+                                                                                    <p>FORM OF DELIVERY</p>
+                                                                                </li>
+                                                                                <li class="infor_cus ">
+                                                                                    <p>FREESHIP</p>
+                                                                                </li>
+                                                                            </ul>
+                                                                        </div>
+                                                                        <div class="detail_infor_order col ">
+                                                                            <ul>
+                                                                                <li>
+                                                                                    <p>PAYMENT METHOD</p>
+                                                                                </li>
+                                                                                <li class="infor_cus ">
+                                                                                    <p>CASH PAYMENT ON RECEIPT OF GOODS</p>
+                                                                                </li>
+                                                                            </ul>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                                <table class="modal_tbl table ">
+                                                                    <thead>
+                                                                        <tr>
+                                                                            <th class="modal_prd ">PRODUCTS</th>
+                                                                            <th class="modal_prd_inf ">PRICE</th>
+                                                                            <th class="modal_prd_inf ">QUANTITY</th>
+                                                                            <th class="modal_prd_inf ">SALE</th>
+                                                                            <th class="modal_prd_inf ">TOTAL</th>
+                                                                        </tr>
+                                                                    </thead>
+                                                                    <tbody>
+                                                                        <tr>
+                                                                            <td>SAMSUNG GALAXY NOTE 20 ULTRA</td>
+                                                                            <td>$4000</td>
+                                                                            <td>3</td>
+                                                                            <td>$0</td>
+                                                                            <td>$12000</td>
+                                                                        </tr>
+                                                                        <tr>
+                                                                            <td>SAMSUNG GALAXY NOTE 20 ULTRA</td>
+                                                                            <td>$4000</td>
+                                                                            <td>3</td>
+                                                                            <td>$0</td>
+                                                                            <td>$12000</td>
+                                                                        </tr>
+                                                                        <tr>
+                                                                            <td>SAMSUNG GALAXY NOTE 20 ULTRA</td>
+                                                                            <td>$4000</td>
+                                                                            <td>3</td>
+                                                                            <td>$0</td>
+                                                                            <td>$12000</td>
+                                                                        </tr>
+                                                                        <tr>
+                                                                            <td>SAMSUNG GALAXY NOTE 20 ULTRA</td>
+                                                                            <td>$4000</td>
+                                                                            <td>3</td>
+                                                                            <td>$0</td>
+                                                                            <td>$12000</td>
+                                                                        </tr>
+                                                                        <tr>
+                                                                            <td>SAMSUNG GALAXY NOTE 20 ULTRA</td>
+                                                                            <td>$4000</td>
+                                                                            <td>3</td>
+                                                                            <td>$0</td>
+                                                                            <td>$12000</td>
+                                                                        </tr>
+                                                                    </tbody>
+                                                                </table>
+                                                            </div>
+                                                        </div>
+                                                        <div class="modal_footer modal-footer ">
+                                                            <button type="button " class="btn btn-dark" data-dismiss="modal">CONFIRM</button>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </td>
+                                        <td>20/11/2020</td>
+                                        <td>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsam delectus dolorem asperiores maiores commodi, ducimus recusandae hic impedit, facere eius vero unde dolorum esse ex? Veritatis, fuga. Vel, neque nam?</td>
+                                        <td>$5000</td>
+                                        <td>Delivered</td>
+                                    </tr>
+                                    <tr>
+                                        <td><a href="" data-toggle="modal" data-target="#show_detail_order">#111111</a>
+                                            <!-- Modal -->
+                                            <div class="modal fade " id="show_detail_order" tabindex="-1 " aria-labelledby="detail_order" aria-hidden="true ">
+                                                <div class=" modal-dialog modal_edit ">
+                                                    <div class=" modal-content modal_color ">
+                                                        <div class="modal-header modal_header_color ">
+                                                            <h5 class="modal-title " id="detail_order">STATUS ORDER:<span>Delivered</span></h5>
+
+                                                        </div>
+                                                        <div class=" modal-body ">
+                                                            <div class="popup_detail_order container ">
+                                                                <h2>DETAIL ORDER: <span>#11111111</span></h2>
+                                                                <p>Order date: <span>07/11/2020</span></p>
+                                                                <div class="infor_detail_order container-fluid ">
+                                                                    <div class="row ">
+                                                                        <div class="detail_infor_order col ">
+                                                                            <ul>
+                                                                                <li>
+                                                                                    <p>RECEIVER'S ADDRESS</p>
+                                                                                </li>
+                                                                                <li class="infor_cus ">
+                                                                                    <h1>TRAN THANH TUNG</h1>
+                                                                                    <h2>Address:
+                                                                                        <Span>107 Nguyen Phong Sac, Dich Vong Hau, Cau Giay, Ha Noi.</Span>
+                                                                                    </h2>
+                                                                                    <h2>Phonenumber:<span>0123456789</span></h2>
+                                                                                </li>
+                                                                            </ul>
+                                                                        </div>
+                                                                        <div class="detail_infor_order col ">
+                                                                            <ul>
+                                                                                <li>
+                                                                                    <p>FORM OF DELIVERY</p>
+                                                                                </li>
+                                                                                <li class="infor_cus ">
+                                                                                    <p>FREESHIP</p>
+                                                                                </li>
+                                                                            </ul>
+                                                                        </div>
+                                                                        <div class="detail_infor_order col ">
+                                                                            <ul>
+                                                                                <li>
+                                                                                    <p>PAYMENT METHOD</p>
+                                                                                </li>
+                                                                                <li class="infor_cus ">
+                                                                                    <p>CASH PAYMENT ON RECEIPT OF GOODS</p>
+                                                                                </li>
+                                                                            </ul>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                                <table class="modal_tbl table ">
+                                                                    <thead>
+                                                                        <tr>
+                                                                            <th class="modal_prd ">PRODUCTS</th>
+                                                                            <th class="modal_prd_inf ">PRICE</th>
+                                                                            <th class="modal_prd_inf ">QUANTITY</th>
+                                                                            <th class="modal_prd_inf ">SALE</th>
+                                                                            <th class="modal_prd_inf ">TOTAL</th>
+                                                                        </tr>
+                                                                    </thead>
+                                                                    <tbody>
+                                                                        <tr>
+                                                                            <td>SAMSUNG GALAXY NOTE 20 ULTRA</td>
+                                                                            <td>$4000</td>
+                                                                            <td>3</td>
+                                                                            <td>$0</td>
+                                                                            <td>$12000</td>
+                                                                        </tr>
+                                                                        <tr>
+                                                                            <td>SAMSUNG GALAXY NOTE 20 ULTRA</td>
+                                                                            <td>$4000</td>
+                                                                            <td>3</td>
+                                                                            <td>$0</td>
+                                                                            <td>$12000</td>
+                                                                        </tr>
+                                                                        <tr>
+                                                                            <td>SAMSUNG GALAXY NOTE 20 ULTRA</td>
+                                                                            <td>$4000</td>
+                                                                            <td>3</td>
+                                                                            <td>$0</td>
+                                                                            <td>$12000</td>
+                                                                        </tr>
+                                                                        <tr>
+                                                                            <td>SAMSUNG GALAXY NOTE 20 ULTRA</td>
+                                                                            <td>$4000</td>
+                                                                            <td>3</td>
+                                                                            <td>$0</td>
+                                                                            <td>$12000</td>
+                                                                        </tr>
+                                                                        <tr>
+                                                                            <td>SAMSUNG GALAXY NOTE 20 ULTRA</td>
+                                                                            <td>$4000</td>
+                                                                            <td>3</td>
+                                                                            <td>$0</td>
+                                                                            <td>$12000</td>
+                                                                        </tr>
+                                                                    </tbody>
+                                                                </table>
+                                                            </div>
+                                                        </div>
+                                                        <div class="modal_footer modal-footer ">
+                                                            <button type="button " class="btn btn-dark" data-dismiss="modal">CONFIRM</button>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </td>
+                                        <td>20/11/2020</td>
+                                        <td>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsam delectus dolorem asperiores maiores commodi, ducimus recusandae hic impedit, facere eius vero unde dolorum esse ex? Veritatis, fuga. Vel, neque nam?</td>
+                                        <td>$5000</td>
+                                        <td>Delivered</td>
+                                    </tr>
+                                    <tr>
+                                        <td><a href="" data-toggle="modal" data-target="#show_detail_order">#111111</a>
+                                            <!-- Modal -->
+                                            <div class="modal fade " id="show_detail_order" tabindex="-1 " aria-labelledby="detail_order" aria-hidden="true ">
+                                                <div class=" modal-dialog modal_edit ">
+                                                    <div class=" modal-content modal_color ">
+                                                        <div class="modal-header modal_header_color ">
+                                                            <h5 class="modal-title " id="detail_order">STATUS ORDER:<span>Delivered</span></h5>
+
+                                                        </div>
+                                                        <div class=" modal-body ">
+                                                            <div class="popup_detail_order container ">
+                                                                <h2>DETAIL ORDER: <span>#11111111</span></h2>
+                                                                <p>Order date: <span>07/11/2020</span></p>
+                                                                <div class="infor_detail_order container-fluid ">
+                                                                    <div class="row ">
+                                                                        <div class="detail_infor_order col ">
+                                                                            <ul>
+                                                                                <li>
+                                                                                    <p>RECEIVER'S ADDRESS</p>
+                                                                                </li>
+                                                                                <li class="infor_cus ">
+                                                                                    <h1>TRAN THANH TUNG</h1>
+                                                                                    <h2>Address:
+                                                                                        <Span>107 Nguyen Phong Sac, Dich Vong Hau, Cau Giay, Ha Noi.</Span>
+                                                                                    </h2>
+                                                                                    <h2>Phonenumber:<span>0123456789</span></h2>
+                                                                                </li>
+                                                                            </ul>
+                                                                        </div>
+                                                                        <div class="detail_infor_order col ">
+                                                                            <ul>
+                                                                                <li>
+                                                                                    <p>FORM OF DELIVERY</p>
+                                                                                </li>
+                                                                                <li class="infor_cus ">
+                                                                                    <p>FREESHIP</p>
+                                                                                </li>
+                                                                            </ul>
+                                                                        </div>
+                                                                        <div class="detail_infor_order col ">
+                                                                            <ul>
+                                                                                <li>
+                                                                                    <p>PAYMENT METHOD</p>
+                                                                                </li>
+                                                                                <li class="infor_cus ">
+                                                                                    <p>CASH PAYMENT ON RECEIPT OF GOODS</p>
+                                                                                </li>
+                                                                            </ul>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                                <table class="modal_tbl table ">
+                                                                    <thead>
+                                                                        <tr>
+                                                                            <th class="modal_prd ">PRODUCTS</th>
+                                                                            <th class="modal_prd_inf ">PRICE</th>
+                                                                            <th class="modal_prd_inf ">QUANTITY</th>
+                                                                            <th class="modal_prd_inf ">SALE</th>
+                                                                            <th class="modal_prd_inf ">TOTAL</th>
+                                                                        </tr>
+                                                                    </thead>
+                                                                    <tbody>
+                                                                        <tr>
+                                                                            <td>SAMSUNG GALAXY NOTE 20 ULTRA</td>
+                                                                            <td>$4000</td>
+                                                                            <td>3</td>
+                                                                            <td>$0</td>
+                                                                            <td>$12000</td>
+                                                                        </tr>
+                                                                        <tr>
+                                                                            <td>SAMSUNG GALAXY NOTE 20 ULTRA</td>
+                                                                            <td>$4000</td>
+                                                                            <td>3</td>
+                                                                            <td>$0</td>
+                                                                            <td>$12000</td>
+                                                                        </tr>
+                                                                        <tr>
+                                                                            <td>SAMSUNG GALAXY NOTE 20 ULTRA</td>
+                                                                            <td>$4000</td>
+                                                                            <td>3</td>
+                                                                            <td>$0</td>
+                                                                            <td>$12000</td>
+                                                                        </tr>
+                                                                        <tr>
+                                                                            <td>SAMSUNG GALAXY NOTE 20 ULTRA</td>
+                                                                            <td>$4000</td>
+                                                                            <td>3</td>
+                                                                            <td>$0</td>
+                                                                            <td>$12000</td>
+                                                                        </tr>
+                                                                        <tr>
+                                                                            <td>SAMSUNG GALAXY NOTE 20 ULTRA</td>
+                                                                            <td>$4000</td>
+                                                                            <td>3</td>
+                                                                            <td>$0</td>
+                                                                            <td>$12000</td>
+                                                                        </tr>
+                                                                    </tbody>
+                                                                </table>
+                                                            </div>
+                                                        </div>
+                                                        <div class="modal_footer modal-footer ">
+                                                            <button type="button " class="btn btn-dark" data-dismiss="modal">CONFIRM</button>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </td>
+                                        <td>20/11/2020</td>
+                                        <td>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsam delectus dolorem asperiores maiores commodi, ducimus recusandae hic impedit, facere eius vero unde dolorum esse ex? Veritatis, fuga. Vel, neque nam?</td>
+                                        <td>$5000</td>
+                                        <td>Delivered</td>
+                                    </tr>
+                                    <tr>
+                                        <td><a href="" data-toggle="modal" data-target="#show_detail_order">#111111</a>
+                                            <!-- Modal -->
+                                            <div class="modal fade " id="show_detail_order" tabindex="-1 " aria-labelledby="detail_order" aria-hidden="true ">
+                                                <div class=" modal-dialog modal_edit ">
+                                                    <div class=" modal-content modal_color ">
+                                                        <div class="modal-header modal_header_color ">
+                                                            <h5 class="modal-title " id="detail_order">STATUS ORDER:<span>Delivered</span></h5>
+
+                                                        </div>
+                                                        <div class=" modal-body ">
+                                                            <div class="popup_detail_order container ">
+                                                                <h2>DETAIL ORDER: <span>#11111111</span></h2>
+                                                                <p>Order date: <span>07/11/2020</span></p>
+                                                                <div class="infor_detail_order container-fluid ">
+                                                                    <div class="row ">
+                                                                        <div class="detail_infor_order col ">
+                                                                            <ul>
+                                                                                <li>
+                                                                                    <p>RECEIVER'S ADDRESS</p>
+                                                                                </li>
+                                                                                <li class="infor_cus ">
+                                                                                    <h1>TRAN THANH TUNG</h1>
+                                                                                    <h2>Address:
+                                                                                        <Span>107 Nguyen Phong Sac, Dich Vong Hau, Cau Giay, Ha Noi.</Span>
+                                                                                    </h2>
+                                                                                    <h2>Phonenumber:<span>0123456789</span></h2>
+                                                                                </li>
+                                                                            </ul>
+                                                                        </div>
+                                                                        <div class="detail_infor_order col ">
+                                                                            <ul>
+                                                                                <li>
+                                                                                    <p>FORM OF DELIVERY</p>
+                                                                                </li>
+                                                                                <li class="infor_cus ">
+                                                                                    <p>FREESHIP</p>
+                                                                                </li>
+                                                                            </ul>
+                                                                        </div>
+                                                                        <div class="detail_infor_order col ">
+                                                                            <ul>
+                                                                                <li>
+                                                                                    <p>PAYMENT METHOD</p>
+                                                                                </li>
+                                                                                <li class="infor_cus ">
+                                                                                    <p>CASH PAYMENT ON RECEIPT OF GOODS</p>
+                                                                                </li>
+                                                                            </ul>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                                <table class="modal_tbl table ">
+                                                                    <thead>
+                                                                        <tr>
+                                                                            <th class="modal_prd ">PRODUCTS</th>
+                                                                            <th class="modal_prd_inf ">PRICE</th>
+                                                                            <th class="modal_prd_inf ">QUANTITY</th>
+                                                                            <th class="modal_prd_inf ">SALE</th>
+                                                                            <th class="modal_prd_inf ">TOTAL</th>
+                                                                        </tr>
+                                                                    </thead>
+                                                                    <tbody>
+                                                                        <tr>
+                                                                            <td>SAMSUNG GALAXY NOTE 20 ULTRA</td>
+                                                                            <td>$4000</td>
+                                                                            <td>3</td>
+                                                                            <td>$0</td>
+                                                                            <td>$12000</td>
+                                                                        </tr>
+                                                                        <tr>
+                                                                            <td>SAMSUNG GALAXY NOTE 20 ULTRA</td>
+                                                                            <td>$4000</td>
+                                                                            <td>3</td>
+                                                                            <td>$0</td>
+                                                                            <td>$12000</td>
+                                                                        </tr>
+                                                                        <tr>
+                                                                            <td>SAMSUNG GALAXY NOTE 20 ULTRA</td>
+                                                                            <td>$4000</td>
+                                                                            <td>3</td>
+                                                                            <td>$0</td>
+                                                                            <td>$12000</td>
+                                                                        </tr>
+                                                                        <tr>
+                                                                            <td>SAMSUNG GALAXY NOTE 20 ULTRA</td>
+                                                                            <td>$4000</td>
+                                                                            <td>3</td>
+                                                                            <td>$0</td>
+                                                                            <td>$12000</td>
+                                                                        </tr>
+                                                                        <tr>
+                                                                            <td>SAMSUNG GALAXY NOTE 20 ULTRA</td>
+                                                                            <td>$4000</td>
+                                                                            <td>3</td>
+                                                                            <td>$0</td>
+                                                                            <td>$12000</td>
+                                                                        </tr>
+                                                                    </tbody>
+                                                                </table>
+                                                            </div>
+                                                        </div>
+                                                        <div class="modal_footer modal-footer ">
+                                                            <button type="button " class="btn btn-dark" data-dismiss="modal">CONFIRM</button>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </td>
+                                        <td>20/11/2020</td>
+                                        <td>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsam delectus dolorem asperiores maiores commodi, ducimus recusandae hic impedit, facere eius vero unde dolorum esse ex? Veritatis, fuga. Vel, neque nam?</td>
+                                        <td>$5000</td>
+                                        <td>Delivered</td>
+                                    </tr>
+                                    <tr>
+                                        <td><a href="" data-toggle="modal" data-target="#show_detail_order">#111111</a>
+                                            <!-- Modal -->
+                                            <div class="modal fade " id="show_detail_order" tabindex="-1 " aria-labelledby="detail_order" aria-hidden="true ">
+                                                <div class=" modal-dialog modal_edit ">
+                                                    <div class=" modal-content modal_color ">
+                                                        <div class="modal-header modal_header_color ">
+                                                            <h5 class="modal-title " id="detail_order">STATUS ORDER:<span>Delivered</span></h5>
+
+                                                        </div>
+                                                        <div class=" modal-body ">
+                                                            <div class="popup_detail_order container ">
+                                                                <h2>DETAIL ORDER: <span>#11111111</span></h2>
+                                                                <p>Order date: <span>07/11/2020</span></p>
+                                                                <div class="infor_detail_order container-fluid ">
+                                                                    <div class="row ">
+                                                                        <div class="detail_infor_order col ">
+                                                                            <ul>
+                                                                                <li>
+                                                                                    <p>RECEIVER'S ADDRESS</p>
+                                                                                </li>
+                                                                                <li class="infor_cus ">
+                                                                                    <h1>TRAN THANH TUNG</h1>
+                                                                                    <h2>Address:
+                                                                                        <Span>107 Nguyen Phong Sac, Dich Vong Hau, Cau Giay, Ha Noi.</Span>
+                                                                                    </h2>
+                                                                                    <h2>Phonenumber:<span>0123456789</span></h2>
+                                                                                </li>
+                                                                            </ul>
+                                                                        </div>
+                                                                        <div class="detail_infor_order col ">
+                                                                            <ul>
+                                                                                <li>
+                                                                                    <p>FORM OF DELIVERY</p>
+                                                                                </li>
+                                                                                <li class="infor_cus ">
+                                                                                    <p>FREESHIP</p>
+                                                                                </li>
+                                                                            </ul>
+                                                                        </div>
+                                                                        <div class="detail_infor_order col ">
+                                                                            <ul>
+                                                                                <li>
+                                                                                    <p>PAYMENT METHOD</p>
+                                                                                </li>
+                                                                                <li class="infor_cus ">
+                                                                                    <p>CASH PAYMENT ON RECEIPT OF GOODS</p>
+                                                                                </li>
+                                                                            </ul>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                                <table class="modal_tbl table ">
+                                                                    <thead>
+                                                                        <tr>
+                                                                            <th class="modal_prd ">PRODUCTS</th>
+                                                                            <th class="modal_prd_inf ">PRICE</th>
+                                                                            <th class="modal_prd_inf ">QUANTITY</th>
+                                                                            <th class="modal_prd_inf ">SALE</th>
+                                                                            <th class="modal_prd_inf ">TOTAL</th>
+                                                                        </tr>
+                                                                    </thead>
+                                                                    <tbody>
+                                                                        <tr>
+                                                                            <td>SAMSUNG GALAXY NOTE 20 ULTRA</td>
+                                                                            <td>$4000</td>
+                                                                            <td>3</td>
+                                                                            <td>$0</td>
+                                                                            <td>$12000</td>
+                                                                        </tr>
+                                                                        <tr>
+                                                                            <td>SAMSUNG GALAXY NOTE 20 ULTRA</td>
+                                                                            <td>$4000</td>
+                                                                            <td>3</td>
+                                                                            <td>$0</td>
+                                                                            <td>$12000</td>
+                                                                        </tr>
+                                                                        <tr>
+                                                                            <td>SAMSUNG GALAXY NOTE 20 ULTRA</td>
+                                                                            <td>$4000</td>
+                                                                            <td>3</td>
+                                                                            <td>$0</td>
+                                                                            <td>$12000</td>
+                                                                        </tr>
+                                                                        <tr>
+                                                                            <td>SAMSUNG GALAXY NOTE 20 ULTRA</td>
+                                                                            <td>$4000</td>
+                                                                            <td>3</td>
+                                                                            <td>$0</td>
+                                                                            <td>$12000</td>
+                                                                        </tr>
+                                                                        <tr>
+                                                                            <td>SAMSUNG GALAXY NOTE 20 ULTRA</td>
+                                                                            <td>$4000</td>
+                                                                            <td>3</td>
+                                                                            <td>$0</td>
+                                                                            <td>$12000</td>
+                                                                        </tr>
+                                                                    </tbody>
+                                                                </table>
+                                                            </div>
+                                                        </div>
+                                                        <div class="modal_footer modal-footer ">
+                                                            <button type="button " class="btn btn-dark" data-dismiss="modal">CONFIRM</button>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </td>
+                                        <td>20/11/2020</td>
+                                        <td>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsam delectus dolorem asperiores maiores commodi, ducimus recusandae hic impedit, facere eius vero unde dolorum esse ex? Veritatis, fuga. Vel, neque nam?</td>
+                                        <td>$5000</td>
+                                        <td>Delivered</td>
+                                    </tr>
+                                    <tr>
+                                        <td><a href="" data-toggle="modal" data-target="#show_detail_order">#111111</a>
+                                            <!-- Modal -->
+                                            <div class="modal fade " id="show_detail_order" tabindex="-1 " aria-labelledby="detail_order" aria-hidden="true ">
+                                                <div class=" modal-dialog modal_edit ">
+                                                    <div class=" modal-content modal_color ">
+                                                        <div class="modal-header modal_header_color ">
+                                                            <h5 class="modal-title " id="detail_order">STATUS ORDER:<span>Delivered</span></h5>
+
+                                                        </div>
+                                                        <div class=" modal-body ">
+                                                            <div class="popup_detail_order container ">
+                                                                <h2>DETAIL ORDER: <span>#11111111</span></h2>
+                                                                <p>Order date: <span>07/11/2020</span></p>
+                                                                <div class="infor_detail_order container-fluid ">
+                                                                    <div class="row ">
+                                                                        <div class="detail_infor_order col ">
+                                                                            <ul>
+                                                                                <li>
+                                                                                    <p>RECEIVER'S ADDRESS</p>
+                                                                                </li>
+                                                                                <li class="infor_cus ">
+                                                                                    <h1>TRAN THANH TUNG</h1>
+                                                                                    <h2>Address:
+                                                                                        <Span>107 Nguyen Phong Sac, Dich Vong Hau, Cau Giay, Ha Noi.</Span>
+                                                                                    </h2>
+                                                                                    <h2>Phonenumber:<span>0123456789</span></h2>
+                                                                                </li>
+                                                                            </ul>
+                                                                        </div>
+                                                                        <div class="detail_infor_order col ">
+                                                                            <ul>
+                                                                                <li>
+                                                                                    <p>FORM OF DELIVERY</p>
+                                                                                </li>
+                                                                                <li class="infor_cus ">
+                                                                                    <p>FREESHIP</p>
+                                                                                </li>
+                                                                            </ul>
+                                                                        </div>
+                                                                        <div class="detail_infor_order col ">
+                                                                            <ul>
+                                                                                <li>
+                                                                                    <p>PAYMENT METHOD</p>
+                                                                                </li>
+                                                                                <li class="infor_cus ">
+                                                                                    <p>CASH PAYMENT ON RECEIPT OF GOODS</p>
+                                                                                </li>
+                                                                            </ul>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                                <table class="modal_tbl table ">
+                                                                    <thead>
+                                                                        <tr>
+                                                                            <th class="modal_prd ">PRODUCTS</th>
+                                                                            <th class="modal_prd_inf ">PRICE</th>
+                                                                            <th class="modal_prd_inf ">QUANTITY</th>
+                                                                            <th class="modal_prd_inf ">SALE</th>
+                                                                            <th class="modal_prd_inf ">TOTAL</th>
+                                                                        </tr>
+                                                                    </thead>
+                                                                    <tbody>
+                                                                        <tr>
+                                                                            <td>SAMSUNG GALAXY NOTE 20 ULTRA</td>
+                                                                            <td>$4000</td>
+                                                                            <td>3</td>
+                                                                            <td>$0</td>
+                                                                            <td>$12000</td>
+                                                                        </tr>
+                                                                        <tr>
+                                                                            <td>SAMSUNG GALAXY NOTE 20 ULTRA</td>
+                                                                            <td>$4000</td>
+                                                                            <td>3</td>
+                                                                            <td>$0</td>
+                                                                            <td>$12000</td>
+                                                                        </tr>
+                                                                        <tr>
+                                                                            <td>SAMSUNG GALAXY NOTE 20 ULTRA</td>
+                                                                            <td>$4000</td>
+                                                                            <td>3</td>
+                                                                            <td>$0</td>
+                                                                            <td>$12000</td>
+                                                                        </tr>
+                                                                        <tr>
+                                                                            <td>SAMSUNG GALAXY NOTE 20 ULTRA</td>
+                                                                            <td>$4000</td>
+                                                                            <td>3</td>
+                                                                            <td>$0</td>
+                                                                            <td>$12000</td>
+                                                                        </tr>
+                                                                        <tr>
+                                                                            <td>SAMSUNG GALAXY NOTE 20 ULTRA</td>
+                                                                            <td>$4000</td>
+                                                                            <td>3</td>
+                                                                            <td>$0</td>
+                                                                            <td>$12000</td>
+                                                                        </tr>
+                                                                    </tbody>
+                                                                </table>
+                                                            </div>
+                                                        </div>
+                                                        <div class="modal_footer modal-footer ">
+                                                            <button type="button " class="btn btn-dark" data-dismiss="modal">CONFIRM</button>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </td>
+                                        <td>20/11/2020</td>
+                                        <td>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsam delectus dolorem asperiores maiores commodi, ducimus recusandae hic impedit, facere eius vero unde dolorum esse ex? Veritatis, fuga. Vel, neque nam?</td>
+                                        <td>$5000</td>
+                                        <td>Delivered</td>
+                                    </tr>
+                                    <tr>
+                                        <td><a href="" data-toggle="modal" data-target="#show_detail_order">#111111</a>
+                                            <!-- Modal -->
+                                            <div class="modal fade " id="show_detail_order" tabindex="-1 " aria-labelledby="detail_order" aria-hidden="true ">
+                                                <div class=" modal-dialog modal_edit ">
+                                                    <div class=" modal-content modal_color ">
+                                                        <div class="modal-header modal_header_color ">
+                                                            <h5 class="modal-title " id="detail_order">STATUS ORDER:<span>Delivered</span></h5>
+
+                                                        </div>
+                                                        <div class=" modal-body ">
+                                                            <div class="popup_detail_order container ">
+                                                                <h2>DETAIL ORDER: <span>#11111111</span></h2>
+                                                                <p>Order date: <span>07/11/2020</span></p>
+                                                                <div class="infor_detail_order container-fluid ">
+                                                                    <div class="row ">
+                                                                        <div class="detail_infor_order col ">
+                                                                            <ul>
+                                                                                <li>
+                                                                                    <p>RECEIVER'S ADDRESS</p>
+                                                                                </li>
+                                                                                <li class="infor_cus ">
+                                                                                    <h1>TRAN THANH TUNG</h1>
+                                                                                    <h2>Address:
+                                                                                        <Span>107 Nguyen Phong Sac, Dich Vong Hau, Cau Giay, Ha Noi.</Span>
+                                                                                    </h2>
+                                                                                    <h2>Phonenumber:<span>0123456789</span></h2>
+                                                                                </li>
+                                                                            </ul>
+                                                                        </div>
+                                                                        <div class="detail_infor_order col ">
+                                                                            <ul>
+                                                                                <li>
+                                                                                    <p>FORM OF DELIVERY</p>
+                                                                                </li>
+                                                                                <li class="infor_cus ">
+                                                                                    <p>FREESHIP</p>
+                                                                                </li>
+                                                                            </ul>
+                                                                        </div>
+                                                                        <div class="detail_infor_order col ">
+                                                                            <ul>
+                                                                                <li>
+                                                                                    <p>PAYMENT METHOD</p>
+                                                                                </li>
+                                                                                <li class="infor_cus ">
+                                                                                    <p>CASH PAYMENT ON RECEIPT OF GOODS</p>
+                                                                                </li>
+                                                                            </ul>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                                <table class="modal_tbl table ">
+                                                                    <thead>
+                                                                        <tr>
+                                                                            <th class="modal_prd ">PRODUCTS</th>
+                                                                            <th class="modal_prd_inf ">PRICE</th>
+                                                                            <th class="modal_prd_inf ">QUANTITY</th>
+                                                                            <th class="modal_prd_inf ">SALE</th>
+                                                                            <th class="modal_prd_inf ">TOTAL</th>
+                                                                        </tr>
+                                                                    </thead>
+                                                                    <tbody>
+                                                                        <tr>
+                                                                            <td>SAMSUNG GALAXY NOTE 20 ULTRA</td>
+                                                                            <td>$4000</td>
+                                                                            <td>3</td>
+                                                                            <td>$0</td>
+                                                                            <td>$12000</td>
+                                                                        </tr>
+                                                                        <tr>
+                                                                            <td>SAMSUNG GALAXY NOTE 20 ULTRA</td>
+                                                                            <td>$4000</td>
+                                                                            <td>3</td>
+                                                                            <td>$0</td>
+                                                                            <td>$12000</td>
+                                                                        </tr>
+                                                                        <tr>
+                                                                            <td>SAMSUNG GALAXY NOTE 20 ULTRA</td>
+                                                                            <td>$4000</td>
+                                                                            <td>3</td>
+                                                                            <td>$0</td>
+                                                                            <td>$12000</td>
+                                                                        </tr>
+                                                                        <tr>
+                                                                            <td>SAMSUNG GALAXY NOTE 20 ULTRA</td>
+                                                                            <td>$4000</td>
+                                                                            <td>3</td>
+                                                                            <td>$0</td>
+                                                                            <td>$12000</td>
+                                                                        </tr>
+                                                                        <tr>
+                                                                            <td>SAMSUNG GALAXY NOTE 20 ULTRA</td>
+                                                                            <td>$4000</td>
+                                                                            <td>3</td>
+                                                                            <td>$0</td>
+                                                                            <td>$12000</td>
+                                                                        </tr>
+                                                                    </tbody>
+                                                                </table>
+                                                            </div>
+                                                        </div>
+                                                        <div class="modal_footer modal-footer ">
+                                                            <button type="button " class="btn btn-dark" data-dismiss="modal">CONFIRM</button>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </td>
+                                        <td>20/11/2020</td>
+                                        <td>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsam delectus dolorem asperiores maiores commodi, ducimus recusandae hic impedit, facere eius vero unde dolorum esse ex? Veritatis, fuga. Vel, neque nam?</td>
+                                        <td>$5000</td>
+                                        <td>Delivered</td>
+                                    </tr>
+                                    <tr>
+                                        <td><a href="" data-toggle="modal" data-target="#show_detail_order">#111111</a>
+                                            <!-- Modal -->
+                                            <div class="modal fade " id="show_detail_order" tabindex="-1 " aria-labelledby="detail_order" aria-hidden="true ">
+                                                <div class=" modal-dialog modal_edit ">
+                                                    <div class=" modal-content modal_color ">
+                                                        <div class="modal-header modal_header_color ">
+                                                            <h5 class="modal-title " id="detail_order">STATUS ORDER:<span>Delivered</span></h5>
+
+                                                        </div>
+                                                        <div class=" modal-body ">
+                                                            <div class="popup_detail_order container ">
+                                                                <h2>DETAIL ORDER: <span>#11111111</span></h2>
+                                                                <p>Order date: <span>07/11/2020</span></p>
+                                                                <div class="infor_detail_order container-fluid ">
+                                                                    <div class="row ">
+                                                                        <div class="detail_infor_order col ">
+                                                                            <ul>
+                                                                                <li>
+                                                                                    <p>RECEIVER'S ADDRESS</p>
+                                                                                </li>
+                                                                                <li class="infor_cus ">
+                                                                                    <h1>TRAN THANH TUNG</h1>
+                                                                                    <h2>Address:
+                                                                                        <Span>107 Nguyen Phong Sac, Dich Vong Hau, Cau Giay, Ha Noi.</Span>
+                                                                                    </h2>
+                                                                                    <h2>Phonenumber:<span>0123456789</span></h2>
+                                                                                </li>
+                                                                            </ul>
+                                                                        </div>
+                                                                        <div class="detail_infor_order col ">
+                                                                            <ul>
+                                                                                <li>
+                                                                                    <p>FORM OF DELIVERY</p>
+                                                                                </li>
+                                                                                <li class="infor_cus ">
+                                                                                    <p>FREESHIP</p>
+                                                                                </li>
+                                                                            </ul>
+                                                                        </div>
+                                                                        <div class="detail_infor_order col ">
+                                                                            <ul>
+                                                                                <li>
+                                                                                    <p>PAYMENT METHOD</p>
+                                                                                </li>
+                                                                                <li class="infor_cus ">
+                                                                                    <p>CASH PAYMENT ON RECEIPT OF GOODS</p>
+                                                                                </li>
+                                                                            </ul>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                                <table class="modal_tbl table ">
+                                                                    <thead>
+                                                                        <tr>
+                                                                            <th class="modal_prd ">PRODUCTS</th>
+                                                                            <th class="modal_prd_inf ">PRICE</th>
+                                                                            <th class="modal_prd_inf ">QUANTITY</th>
+                                                                            <th class="modal_prd_inf ">SALE</th>
+                                                                            <th class="modal_prd_inf ">TOTAL</th>
+                                                                        </tr>
+                                                                    </thead>
+                                                                    <tbody>
+                                                                        <tr>
+                                                                            <td>SAMSUNG GALAXY NOTE 20 ULTRA</td>
+                                                                            <td>$4000</td>
+                                                                            <td>3</td>
+                                                                            <td>$0</td>
+                                                                            <td>$12000</td>
+                                                                        </tr>
+                                                                        <tr>
+                                                                            <td>SAMSUNG GALAXY NOTE 20 ULTRA</td>
+                                                                            <td>$4000</td>
+                                                                            <td>3</td>
+                                                                            <td>$0</td>
+                                                                            <td>$12000</td>
+                                                                        </tr>
+                                                                        <tr>
+                                                                            <td>SAMSUNG GALAXY NOTE 20 ULTRA</td>
+                                                                            <td>$4000</td>
+                                                                            <td>3</td>
+                                                                            <td>$0</td>
+                                                                            <td>$12000</td>
+                                                                        </tr>
+                                                                        <tr>
+                                                                            <td>SAMSUNG GALAXY NOTE 20 ULTRA</td>
+                                                                            <td>$4000</td>
+                                                                            <td>3</td>
+                                                                            <td>$0</td>
+                                                                            <td>$12000</td>
+                                                                        </tr>
+                                                                        <tr>
+                                                                            <td>SAMSUNG GALAXY NOTE 20 ULTRA</td>
+                                                                            <td>$4000</td>
+                                                                            <td>3</td>
+                                                                            <td>$0</td>
+                                                                            <td>$12000</td>
+                                                                        </tr>
+                                                                    </tbody>
+                                                                </table>
+                                                            </div>
+                                                        </div>
+                                                        <div class="modal_footer modal-footer ">
+                                                            <button type="button " class="btn btn-dark" data-dismiss="modal">CONFIRM</button>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </td>
+                                        <td>20/11/2020</td>
+                                        <td>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsam delectus dolorem asperiores maiores commodi, ducimus recusandae hic impedit, facere eius vero unde dolorum esse ex? Veritatis, fuga. Vel, neque nam?</td>
+                                        <td>$5000</td>
+                                        <td>Delivered</td>
+                                    </tr>
+                                    <tr>
+                                        <td><a href="" data-toggle="modal" data-target="#show_detail_order">#111111</a>
+                                            <!-- Modal -->
+                                            <div class="modal fade " id="show_detail_order" tabindex="-1 " aria-labelledby="detail_order" aria-hidden="true ">
+                                                <div class=" modal-dialog modal_edit ">
+                                                    <div class=" modal-content modal_color ">
+                                                        <div class="modal-header modal_header_color ">
+                                                            <h5 class="modal-title " id="detail_order">STATUS ORDER:<span>Delivered</span></h5>
+
+                                                        </div>
+                                                        <div class=" modal-body ">
+                                                            <div class="popup_detail_order container ">
+                                                                <h2>DETAIL ORDER: <span>#11111111</span></h2>
+                                                                <p>Order date: <span>07/11/2020</span></p>
+                                                                <div class="infor_detail_order container-fluid ">
+                                                                    <div class="row ">
+                                                                        <div class="detail_infor_order col ">
+                                                                            <ul>
+                                                                                <li>
+                                                                                    <p>RECEIVER'S ADDRESS</p>
+                                                                                </li>
+                                                                                <li class="infor_cus ">
+                                                                                    <h1>TRAN THANH TUNG</h1>
+                                                                                    <h2>Address:
+                                                                                        <Span>107 Nguyen Phong Sac, Dich Vong Hau, Cau Giay, Ha Noi.</Span>
+                                                                                    </h2>
+                                                                                    <h2>Phonenumber:<span>0123456789</span></h2>
+                                                                                </li>
+                                                                            </ul>
+                                                                        </div>
+                                                                        <div class="detail_infor_order col ">
+                                                                            <ul>
+                                                                                <li>
+                                                                                    <p>FORM OF DELIVERY</p>
+                                                                                </li>
+                                                                                <li class="infor_cus ">
+                                                                                    <p>FREESHIP</p>
+                                                                                </li>
+                                                                            </ul>
+                                                                        </div>
+                                                                        <div class="detail_infor_order col ">
+                                                                            <ul>
+                                                                                <li>
+                                                                                    <p>PAYMENT METHOD</p>
+                                                                                </li>
+                                                                                <li class="infor_cus ">
+                                                                                    <p>CASH PAYMENT ON RECEIPT OF GOODS</p>
+                                                                                </li>
+                                                                            </ul>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                                <table class="modal_tbl table ">
+                                                                    <thead>
+                                                                        <tr>
+                                                                            <th class="modal_prd ">PRODUCTS</th>
+                                                                            <th class="modal_prd_inf ">PRICE</th>
+                                                                            <th class="modal_prd_inf ">QUANTITY</th>
+                                                                            <th class="modal_prd_inf ">SALE</th>
+                                                                            <th class="modal_prd_inf ">TOTAL</th>
+                                                                        </tr>
+                                                                    </thead>
+                                                                    <tbody>
+                                                                        <tr>
+                                                                            <td>SAMSUNG GALAXY NOTE 20 ULTRA</td>
+                                                                            <td>$4000</td>
+                                                                            <td>3</td>
+                                                                            <td>$0</td>
+                                                                            <td>$12000</td>
+                                                                        </tr>
+                                                                        <tr>
+                                                                            <td>SAMSUNG GALAXY NOTE 20 ULTRA</td>
+                                                                            <td>$4000</td>
+                                                                            <td>3</td>
+                                                                            <td>$0</td>
+                                                                            <td>$12000</td>
+                                                                        </tr>
+                                                                        <tr>
+                                                                            <td>SAMSUNG GALAXY NOTE 20 ULTRA</td>
+                                                                            <td>$4000</td>
+                                                                            <td>3</td>
+                                                                            <td>$0</td>
+                                                                            <td>$12000</td>
+                                                                        </tr>
+                                                                        <tr>
+                                                                            <td>SAMSUNG GALAXY NOTE 20 ULTRA</td>
+                                                                            <td>$4000</td>
+                                                                            <td>3</td>
+                                                                            <td>$0</td>
+                                                                            <td>$12000</td>
+                                                                        </tr>
+                                                                        <tr>
+                                                                            <td>SAMSUNG GALAXY NOTE 20 ULTRA</td>
+                                                                            <td>$4000</td>
+                                                                            <td>3</td>
+                                                                            <td>$0</td>
+                                                                            <td>$12000</td>
+                                                                        </tr>
+                                                                    </tbody>
+                                                                </table>
+                                                            </div>
+                                                        </div>
+                                                        <div class="modal_footer modal-footer ">
+                                                            <button type="button " class="btn btn-dark" data-dismiss="modal">CONFIRM</button>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </td>
+                                        <td>20/11/2020</td>
+                                        <td>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsam delectus dolorem asperiores maiores commodi, ducimus recusandae hic impedit, facere eius vero unde dolorum esse ex? Veritatis, fuga. Vel, neque nam?</td>
+                                        <td>$5000</td>
+                                        <td>Delivered</td>
+                                    </tr>
+                                    <tr>
+                                        <td><a href="" data-toggle="modal" data-target="#show_detail_order">#111111</a>
+                                            <!-- Modal -->
+                                            <div class="modal fade " id="show_detail_order" tabindex="-1 " aria-labelledby="detail_order" aria-hidden="true ">
+                                                <div class=" modal-dialog modal_edit ">
+                                                    <div class=" modal-content modal_color ">
+                                                        <div class="modal-header modal_header_color ">
+                                                            <h5 class="modal-title " id="detail_order">STATUS ORDER:<span>Delivered</span></h5>
+
+                                                        </div>
+                                                        <div class=" modal-body ">
+                                                            <div class="popup_detail_order container ">
+                                                                <h2>DETAIL ORDER: <span>#11111111</span></h2>
+                                                                <p>Order date: <span>07/11/2020</span></p>
+                                                                <div class="infor_detail_order container-fluid ">
+                                                                    <div class="row ">
+                                                                        <div class="detail_infor_order col ">
+                                                                            <ul>
+                                                                                <li>
+                                                                                    <p>RECEIVER'S ADDRESS</p>
+                                                                                </li>
+                                                                                <li class="infor_cus ">
+                                                                                    <h1>TRAN THANH TUNG</h1>
+                                                                                    <h2>Address:
+                                                                                        <Span>107 Nguyen Phong Sac, Dich Vong Hau, Cau Giay, Ha Noi.</Span>
+                                                                                    </h2>
+                                                                                    <h2>Phonenumber:<span>0123456789</span></h2>
+                                                                                </li>
+                                                                            </ul>
+                                                                        </div>
+                                                                        <div class="detail_infor_order col ">
+                                                                            <ul>
+                                                                                <li>
+                                                                                    <p>FORM OF DELIVERY</p>
+                                                                                </li>
+                                                                                <li class="infor_cus ">
+                                                                                    <p>FREESHIP</p>
+                                                                                </li>
+                                                                            </ul>
+                                                                        </div>
+                                                                        <div class="detail_infor_order col ">
+                                                                            <ul>
+                                                                                <li>
+                                                                                    <p>PAYMENT METHOD</p>
+                                                                                </li>
+                                                                                <li class="infor_cus ">
+                                                                                    <p>CASH PAYMENT ON RECEIPT OF GOODS</p>
+                                                                                </li>
+                                                                            </ul>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                                <table class="modal_tbl table ">
+                                                                    <thead>
+                                                                        <tr>
+                                                                            <th class="modal_prd ">PRODUCTS</th>
+                                                                            <th class="modal_prd_inf ">PRICE</th>
+                                                                            <th class="modal_prd_inf ">QUANTITY</th>
+                                                                            <th class="modal_prd_inf ">SALE</th>
+                                                                            <th class="modal_prd_inf ">TOTAL</th>
+                                                                        </tr>
+                                                                    </thead>
+                                                                    <tbody>
+                                                                        <tr>
+                                                                            <td>SAMSUNG GALAXY NOTE 20 ULTRA</td>
+                                                                            <td>$4000</td>
+                                                                            <td>3</td>
+                                                                            <td>$0</td>
+                                                                            <td>$12000</td>
+                                                                        </tr>
+                                                                        <tr>
+                                                                            <td>SAMSUNG GALAXY NOTE 20 ULTRA</td>
+                                                                            <td>$4000</td>
+                                                                            <td>3</td>
+                                                                            <td>$0</td>
+                                                                            <td>$12000</td>
+                                                                        </tr>
+                                                                        <tr>
+                                                                            <td>SAMSUNG GALAXY NOTE 20 ULTRA</td>
+                                                                            <td>$4000</td>
+                                                                            <td>3</td>
+                                                                            <td>$0</td>
+                                                                            <td>$12000</td>
+                                                                        </tr>
+                                                                        <tr>
+                                                                            <td>SAMSUNG GALAXY NOTE 20 ULTRA</td>
+                                                                            <td>$4000</td>
+                                                                            <td>3</td>
+                                                                            <td>$0</td>
+                                                                            <td>$12000</td>
+                                                                        </tr>
+                                                                        <tr>
+                                                                            <td>SAMSUNG GALAXY NOTE 20 ULTRA</td>
+                                                                            <td>$4000</td>
+                                                                            <td>3</td>
+                                                                            <td>$0</td>
+                                                                            <td>$12000</td>
+                                                                        </tr>
+                                                                    </tbody>
+                                                                </table>
+                                                            </div>
+                                                        </div>
+                                                        <div class="modal_footer modal-footer ">
+                                                            <button type="button " class="btn btn-dark" data-dismiss="modal">CONFIRM</button>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </td>
+                                        <td>20/11/2020</td>
+                                        <td>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsam delectus dolorem asperiores maiores commodi, ducimus recusandae hic impedit, facere eius vero unde dolorum esse ex? Veritatis, fuga. Vel, neque nam?</td>
+                                        <td>$5000</td>
+                                        <td>Delivered</td>
+                                    </tr>
+                                    <tr>
+                                        <td><a href="" data-toggle="modal" data-target="#show_detail_order">#111111</a>
+                                            <!-- Modal -->
+                                            <div class="modal fade " id="show_detail_order" tabindex="-1 " aria-labelledby="detail_order" aria-hidden="true ">
+                                                <div class=" modal-dialog modal_edit ">
+                                                    <div class=" modal-content modal_color ">
+                                                        <div class="modal-header modal_header_color ">
+                                                            <h5 class="modal-title " id="detail_order">STATUS ORDER:<span>Delivered</span></h5>
+
+                                                        </div>
+                                                        <div class=" modal-body ">
+                                                            <div class="popup_detail_order container ">
+                                                                <h2>DETAIL ORDER: <span>#11111111</span></h2>
+                                                                <p>Order date: <span>07/11/2020</span></p>
+                                                                <div class="infor_detail_order container-fluid ">
+                                                                    <div class="row ">
+                                                                        <div class="detail_infor_order col ">
+                                                                            <ul>
+                                                                                <li>
+                                                                                    <p>RECEIVER'S ADDRESS</p>
+                                                                                </li>
+                                                                                <li class="infor_cus ">
+                                                                                    <h1>TRAN THANH TUNG</h1>
+                                                                                    <h2>Address:
+                                                                                        <Span>107 Nguyen Phong Sac, Dich Vong Hau, Cau Giay, Ha Noi.</Span>
+                                                                                    </h2>
+                                                                                    <h2>Phonenumber:<span>0123456789</span></h2>
+                                                                                </li>
+                                                                            </ul>
+                                                                        </div>
+                                                                        <div class="detail_infor_order col ">
+                                                                            <ul>
+                                                                                <li>
+                                                                                    <p>FORM OF DELIVERY</p>
+                                                                                </li>
+                                                                                <li class="infor_cus ">
+                                                                                    <p>FREESHIP</p>
+                                                                                </li>
+                                                                            </ul>
+                                                                        </div>
+                                                                        <div class="detail_infor_order col ">
+                                                                            <ul>
+                                                                                <li>
+                                                                                    <p>PAYMENT METHOD</p>
+                                                                                </li>
+                                                                                <li class="infor_cus ">
+                                                                                    <p>CASH PAYMENT ON RECEIPT OF GOODS</p>
+                                                                                </li>
+                                                                            </ul>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                                <table class="modal_tbl table ">
+                                                                    <thead>
+                                                                        <tr>
+                                                                            <th class="modal_prd ">PRODUCTS</th>
+                                                                            <th class="modal_prd_inf ">PRICE</th>
+                                                                            <th class="modal_prd_inf ">QUANTITY</th>
+                                                                            <th class="modal_prd_inf ">SALE</th>
+                                                                            <th class="modal_prd_inf ">TOTAL</th>
+                                                                        </tr>
+                                                                    </thead>
+                                                                    <tbody>
+                                                                        <tr>
+                                                                            <td>SAMSUNG GALAXY NOTE 20 ULTRA</td>
+                                                                            <td>$4000</td>
+                                                                            <td>3</td>
+                                                                            <td>$0</td>
+                                                                            <td>$12000</td>
+                                                                        </tr>
+                                                                        <tr>
+                                                                            <td>SAMSUNG GALAXY NOTE 20 ULTRA</td>
+                                                                            <td>$4000</td>
+                                                                            <td>3</td>
+                                                                            <td>$0</td>
+                                                                            <td>$12000</td>
+                                                                        </tr>
+                                                                        <tr>
+                                                                            <td>SAMSUNG GALAXY NOTE 20 ULTRA</td>
+                                                                            <td>$4000</td>
+                                                                            <td>3</td>
+                                                                            <td>$0</td>
+                                                                            <td>$12000</td>
+                                                                        </tr>
+                                                                        <tr>
+                                                                            <td>SAMSUNG GALAXY NOTE 20 ULTRA</td>
+                                                                            <td>$4000</td>
+                                                                            <td>3</td>
+                                                                            <td>$0</td>
+                                                                            <td>$12000</td>
+                                                                        </tr>
+                                                                        <tr>
+                                                                            <td>SAMSUNG GALAXY NOTE 20 ULTRA</td>
+                                                                            <td>$4000</td>
+                                                                            <td>3</td>
+                                                                            <td>$0</td>
+                                                                            <td>$12000</td>
+                                                                        </tr>
+                                                                    </tbody>
+                                                                </table>
+                                                            </div>
+                                                        </div>
+                                                        <div class="modal_footer modal-footer ">
+                                                            <button type="button " class="btn btn-dark" data-dismiss="modal">CONFIRM</button>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </td>
+                                        <td>20/11/2020</td>
+                                        <td>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsam delectus dolorem asperiores maiores commodi, ducimus recusandae hic impedit, facere eius vero unde dolorum esse ex? Veritatis, fuga. Vel, neque nam?</td>
+                                        <td>$5000</td>
+                                        <td>Delivered</td>
+                                    </tr>
+                                    <tr>
+                                        <td><a href="" data-toggle="modal" data-target="#show_detail_order">#111111</a>
+                                            <!-- Modal -->
+                                            <div class="modal fade " id="show_detail_order" tabindex="-1 " aria-labelledby="detail_order" aria-hidden="true ">
+                                                <div class=" modal-dialog modal_edit ">
+                                                    <div class=" modal-content modal_color ">
+                                                        <div class="modal-header modal_header_color ">
+                                                            <h5 class="modal-title " id="detail_order">STATUS ORDER:<span>Delivered</span></h5>
+
+                                                        </div>
+                                                        <div class=" modal-body ">
+                                                            <div class="popup_detail_order container ">
+                                                                <h2>DETAIL ORDER: <span>#11111111</span></h2>
+                                                                <p>Order date: <span>07/11/2020</span></p>
+                                                                <div class="infor_detail_order container-fluid ">
+                                                                    <div class="row ">
+                                                                        <div class="detail_infor_order col ">
+                                                                            <ul>
+                                                                                <li>
+                                                                                    <p>RECEIVER'S ADDRESS</p>
+                                                                                </li>
+                                                                                <li class="infor_cus ">
+                                                                                    <h1>TRAN THANH TUNG</h1>
+                                                                                    <h2>Address:
+                                                                                        <Span>107 Nguyen Phong Sac, Dich Vong Hau, Cau Giay, Ha Noi.</Span>
+                                                                                    </h2>
+                                                                                    <h2>Phonenumber:<span>0123456789</span></h2>
+                                                                                </li>
+                                                                            </ul>
+                                                                        </div>
+                                                                        <div class="detail_infor_order col ">
+                                                                            <ul>
+                                                                                <li>
+                                                                                    <p>FORM OF DELIVERY</p>
+                                                                                </li>
+                                                                                <li class="infor_cus ">
+                                                                                    <p>FREESHIP</p>
+                                                                                </li>
+                                                                            </ul>
+                                                                        </div>
+                                                                        <div class="detail_infor_order col ">
+                                                                            <ul>
+                                                                                <li>
+                                                                                    <p>PAYMENT METHOD</p>
+                                                                                </li>
+                                                                                <li class="infor_cus ">
+                                                                                    <p>CASH PAYMENT ON RECEIPT OF GOODS</p>
+                                                                                </li>
+                                                                            </ul>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                                <table class="modal_tbl table ">
+                                                                    <thead>
+                                                                        <tr>
+                                                                            <th class="modal_prd ">PRODUCTS</th>
+                                                                            <th class="modal_prd_inf ">PRICE</th>
+                                                                            <th class="modal_prd_inf ">QUANTITY</th>
+                                                                            <th class="modal_prd_inf ">SALE</th>
+                                                                            <th class="modal_prd_inf ">TOTAL</th>
+                                                                        </tr>
+                                                                    </thead>
+                                                                    <tbody>
+                                                                        <tr>
+                                                                            <td>SAMSUNG GALAXY NOTE 20 ULTRA</td>
+                                                                            <td>$4000</td>
+                                                                            <td>3</td>
+                                                                            <td>$0</td>
+                                                                            <td>$12000</td>
+                                                                        </tr>
+                                                                        <tr>
+                                                                            <td>SAMSUNG GALAXY NOTE 20 ULTRA</td>
+                                                                            <td>$4000</td>
+                                                                            <td>3</td>
+                                                                            <td>$0</td>
+                                                                            <td>$12000</td>
+                                                                        </tr>
+                                                                        <tr>
+                                                                            <td>SAMSUNG GALAXY NOTE 20 ULTRA</td>
+                                                                            <td>$4000</td>
+                                                                            <td>3</td>
+                                                                            <td>$0</td>
+                                                                            <td>$12000</td>
+                                                                        </tr>
+                                                                        <tr>
+                                                                            <td>SAMSUNG GALAXY NOTE 20 ULTRA</td>
+                                                                            <td>$4000</td>
+                                                                            <td>3</td>
+                                                                            <td>$0</td>
+                                                                            <td>$12000</td>
+                                                                        </tr>
+                                                                        <tr>
+                                                                            <td>SAMSUNG GALAXY NOTE 20 ULTRA</td>
+                                                                            <td>$4000</td>
+                                                                            <td>3</td>
+                                                                            <td>$0</td>
+                                                                            <td>$12000</td>
+                                                                        </tr>
+                                                                    </tbody>
+                                                                </table>
+                                                            </div>
+                                                        </div>
+                                                        <div class="modal_footer modal-footer ">
+                                                            <button type="button " class="btn btn-dark" data-dismiss="modal">CONFIRM</button>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </td>
+                                        <td>20/11/2020</td>
+                                        <td>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsam delectus dolorem asperiores maiores commodi, ducimus recusandae hic impedit, facere eius vero unde dolorum esse ex? Veritatis, fuga. Vel, neque nam?</td>
+                                        <td>$5000</td>
+                                        <td>Delivered</td>
+                                    </tr>
+
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+</body>
+<script>
+    var a = 0;
+
+    function changePassword() {
+        if (a == 0) {
+            document.getElementById('ChangePassword').style.display = 'block';
+            a = 1;
+        } else {
+            document.getElementById('ChangePassword').style.display = 'none';
+            a = 0;
+        }
+    }
+</script>
+</html>
